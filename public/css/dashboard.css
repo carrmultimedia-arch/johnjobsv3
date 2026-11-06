@@ -1,0 +1,176 @@
+/**
+ * MODULE: Dashboard Styles
+ * WORKFLOW: All
+ * PURPOSE: Dashboard layout per 0510_DESIGN_LANGUAGE.md
+ */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.stat-icon {
+  font-size: 24px;
+  color: var(--accent);
+  margin-bottom: 8px;
+  opacity: 0.7;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Pipeline Chart */
+.pipeline-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pipeline-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pipeline-label {
+  width: 120px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+}
+
+.pipeline-bar-fill {
+  height: 20px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  border-radius: 4px;
+  transition: width 0.5s ease;
+  min-width: 4px;
+  flex: 1;
+}
+
+.pipeline-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 30px;
+  text-align: right;
+}
+
+/* Activity List */
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.activity-type {
+  text-transform: capitalize;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.activity-date {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* Analytics Grid */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.analytics-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+}
+
+.analytics-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.analytics-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Funnel Chart */
+.funnel-stage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.funnel-stage:last-child { border-bottom: none; }
+
+.funnel-name {
+  width: 100px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.funnel-bar {
+  height: 24px;
+  background: var(--accent-glow);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  transition: width 0.5s ease;
+}
+
+.funnel-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+}

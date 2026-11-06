@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run PHP regression smoke tests",
+			"type": "shell",
+			"command": "php",
+			"args": [
+				"tests/regression_smoke.php"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		}
+	]
+}

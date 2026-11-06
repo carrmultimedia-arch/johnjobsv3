@@ -1,0 +1,600 @@
+You are an expert resume writer. Using the MASTER RESUME below, create a custom one-page resume for this job:
+
+[JOB DESCRIPTION PASTED HERE]
+
+RULES:
+1. Select the Professional Summary variant that best matches the job type.
+2. Pull 4-6 bullet points per job from the duty modules most relevant to the target role.
+3. Include 3-5 metrics from the Career Highlights section.
+4. Use the Keyword Reservoir to ensure ATS optimization — incorporate 8-12 relevant terms naturally.
+5. Choose the job title from the Target Job Titles list that matches the posting.
+6. Include only the references that match the job context (or omit if not requested).
+7. Keep it to one page. Prioritize recency and relevance.
+
+ATS KEYWORD & TITLE RESERVOIR
+Paste this into your prompt as: "For ATS optimization, incorporate relevant terms from this vocabulary list naturally into the resume."
+
+Target Job Titles (Use the one closest to the posting):
+
+Video Producer, Senior Video Producer, Lead Video Producer, Video Editor, Lead Video Editor, Content Strategist, Creative Director, Production Manager, Production Supervisor, Broadcast Director, Technical Director, Television Director, Commercial Producer, Corporate Video Producer, Videographer, Director of Photography, FAA Part 107 UAV Pilot, Drone Pilot, Drone Videographer, Drone Photographer, Motion Graphics Artist, Animator, Audio Engineer, Audio Producer, Technical Coordinator, IT Technician, Engineering Support, Operations Manager, Studio Manager, Creative Team Manager, Marketing Content Producer, Digital Content Producer, Corporate Communications Producer, Social Media Content Producer, Live Event Producer, Live Broadcast Director, Streaming Producer, Show Producer, Field Producer, Camera Operator, Colorist, Post Production Specialist, Media Asset Manager, Digital Asset Manager, Project Manager, Creative Consultant, Visual Storytelling Consultant.
+
+ATS Keyword Reservoir (Grouped by Function):
+
+Production & Direction:
+End-to-End Production, Concept-to-Delivery, Scripting, Storyboarding, Cinematography, Camera Operation, Multi-Camera Production, Live Directing, Technical Directing, Broadcast Directing, Studio Production, Field Production, Remote Production, Location Scouting, Production Planning, Crew Management, Shot Composition, Camera Movement, B-Roll Acquisition, Interview Production.
+
+Post-Production:
+Non-Linear Editing, Video Editing, Color Correction, Color Grading, Sound Design, Audio Mixing, Audio Mastering, Motion Graphics, 2D Animation, 3D Animation, Visual Effects, Compositing, Graphic Design, Title Design, Typography, Thumbnail Optimization, Encoding, Media Delivery, DVD Authoring, Digital Publishing.
+
+Software & Tools:
+Adobe Premiere Pro, Adobe After Effects, Adobe Photoshop, Adobe Illustrator, Adobe Audition, Adobe Lightroom, Adobe Media Encoder, Adobe Bridge, Adobe Dreamweaver, Adobe Creative Cloud, DaVinci Resolve, Avid Media Composer, Cinema 4D, NewTek LightWave 3D, Pro Tools, PreSonus Studio One, OBS Studio, NewTek TriCaster, WordPress, Microsoft Office, Microsoft PowerPoint, Microsoft Excel, Broadcast Graphics Systems, Virtual Set Systems, DAM Systems, MAM Systems.
+
+Broadcast & Live:
+Live Streaming, Webcasting, Multi-Cam Switching, Broadcast Operations, Master Control, FCC Compliance, EAS Operations, Satellite Operations, Transmitter Operations, Commercial Insertion, Program Logging, Signal Distribution, Waveform Monitoring, Vectorscope, Frame Synchronization, Teleprompter Operation, Intercom Systems, IFB Systems.
+
+Audio:
+Multi-Track Recording, Stereo Recording, Live Sound Reinforcement, Front of House Audio, Studio Recording, Wireless Microphones, Lavalier Microphones, Shotgun Microphones, Audio Console Operation, Signal Routing, Amplification, Equalization, Audio Monitoring, Headphone Distribution, PA Systems, Conference Audio.
+
+Marketing & Strategy:
+Content Strategy, Brand Storytelling, Digital Marketing, Social Media Strategy, Audience Engagement, SEO, Google Analytics, Content Calendar Management, Paid Advertising, Campaign Development, Lead Generation, Marketing ROI, Brand Visibility, Client Relations, Proposal Development, Budget Planning, Vendor Coordination.
+
+Technical & IT:
+Computer Networking, System Troubleshooting, Hardware Repair, Software Installation, Security Patch Management, Equipment Maintenance, Broadcast Equipment Repair, RAID Storage, NAS Storage, Shared Storage, Backup Procedures, Archive Management, Quality Control, Workflow Optimization, Process Improvement.
+
+Leadership:
+Team Leadership, Crew Supervision, Project Management, Scheduling, Delegation, Training & Development, Mentoring, New Employee Onboarding, Performance Evaluation, Cross-Functional Collaboration, Client Presentations, Executive Reporting.
+
+
+MASTER RESUME — JOHN CARR
+Complete Data Repository for AI Customization
+HEADER / CONTACT INVENTORY
+Name: John Carr
+Email: john@carrmultimedia.com
+Phone: (713) 899-1776
+Location: New Braunfels, TX 78130 
+LinkedIn: linkedin.com/in/johnmcarrcmm
+Website: carrmultimedia.com
+Video Portfolio: carrmultimedia.com/video-portfolio/ | vimeo.com/carrmultimedia | 
+Photography Portfolio: photography.carrmultimedia.com/index.html
+Addy Award Video: youtube.com/watch?v=NXF4G6CtvA4
+
+PROFESSIONAL SUMMARY — ALL VARIANTS
+Use AI to select/combine the paragraphs below based on target job type.
+
+Variant A — Executive/Strategic:
+Award-winning Video Producer and Content Strategist with 30+ years delivering high-impact multimedia campaigns across corporate, broadcast, nonprofit, and digital platforms. Expert in concept-to-delivery production, live multi-camera broadcasts, aerial cinematography, and content strategy. Proven leader in mentoring creative teams, optimizing workflows, and producing engaging content that drives audience growth, brand visibility, and measurable ROI.
+
+Variant B — Creative/Production-Focused:
+Creative Video Editor and Producer with 30+ years of experience delivering polished content for social, broadcast, in-store, and brand campaigns. Expert in Premiere Pro, After Effects, Photoshop, DaVinci Resolve, and audio post-production. Adept at storytelling, pacing, color grading, motion graphics, and MAM/DAM asset management. Recognized for producing high-quality, on-brand content under tight deadlines in collaborative environments. FAA Part 107 UAV certified.
+
+Variant C — Brand Statement/Value Proposition:
+With over three decades in video production, I bring a level of strategic insight, creative execution, and operational efficiency that goes far beyond simply hitting "record." My experience spans corporate communications, sales, marketing, social media advertising, branded content, and live events—built on a foundation of storytelling that connects, converts, and communicates clearly across platforms. In an economy where every marketing dollar must perform, I offer more than technical skills—I bring the foresight to plan smarter, the agility to pivot fast, and the judgment to avoid costly mistakes before they happen. My end-to-end capabilities in scripting, filming, editing, sound, and post-production make me a reliable, single-point solution or an asset to any in-house or agency team. While entry-level candidates may offer a lower rate, what I deliver is speed, strategy, and professionalism that translates into less oversight, fewer revisions, and better ROI.
+
+Variant D — Customer Service/Survival Job Pivot:
+Dependable and hardworking professional with experience in customer service, technical operations, and team leadership. Known for reliability, fast learning, and strong work ethic. Comfortable in fast-paced environments and eager to contribute immediately. Reliable transportation. Flexible schedule.
+
+Variant E — Music/Retail Angle:
+Passionate musician and creative professional with 20+ years of experience delivering exceptional customer experiences, training, and guiding audiences. Skilled in live production, studio production, crew leadership, communication, problem-solving, and product demonstration. Adept at engaging customers/clients, building lasting relationships, and achieving sales goals. Experienced in performing live music, teaching instruments, and sharing a love of music with diverse audiences. Musician playing piano and guitar since 1984. Gigging consistently since 2004. Gig videos available upon request.
+
+CAREER HIGHLIGHTS — METRICS & PROOF POINTS
+All quantifiable achievements found across versions:
+Produced 1,000+ videos across corporate, broadcast, nonprofit, and digital marketing campaigns
+Reaching 25M+ viewers globally
+Directed 50+ aerial drone campaigns (corporate, real estate, promotional, tourism)
+Addy Award winner for local television promotion campaign ("Sunny That Morning Show")
+Directed 2,000+ live broadcasts with zero FCC compliance issues
+Led cross-functional teams of 5–15 creatives; supervised crews of 10+
+Streamlined production workflows, reducing turnaround time by 25%
+Increased client engagement by average of 35% (Carr Multimedia)
+Boosted social media engagement by up to 65% within 90 days for small business clients
+Drove audience growth of 15–25% per campaign (Capital Technologies)
+Boosted DFS Marketing social media engagement by 30%
+DFS live-streamed sales events generated six-figure revenue
+Directed live shows reaching 50,000+ weekly viewers (WLFT-TV)
+Ensured 0% downtime across 50+ live events (WLFT-TV)
+Designed virtual sets and broadcast packages that increased viewer engagement and retention
+Cut production prep time by 30% via virtual set implementation
+Maintained 100% on-time delivery record (Reel Connection Media)
+Consistently delivered projects 10–15% under budget without quality loss
+40% follower growth at DFS Marketing via social content management
+
+CORE SKILLS — COMPREHENSIVE INVENTORY
+Organized by category. Include all keywords for ATS optimization.
+
+Video Production & Direction:
+Video Production, Directing, Storyboarding, Cinematography, Camera Operation, Lighting, Multi-Camera Broadcast, Live Streaming, Webcasting, Virtual Sets, In-Store Video, Brand Campaigns, Corporate Video, Commercial Production, Event Coverage, Wedding Videography, Field Production, B-Roll Capture, Interview Production, Aerial Cinematography, Drone Videography, FAA Part 107 UAV Operation (DJI fleet), Gimbal Operation, Steadicam Operation, Studio Production, Remote Production, Post-Production Supervision, MAM/DAM Workflows, 
+Asset Management, Quality Control
+
+Post-Production & Graphics:
+Adobe Premiere Pro, Adobe After Effects, Adobe Photoshop, Adobe Illustrator, Adobe Audition, Adobe Lightroom, Adobe Dreamweaver, DaVinci Resolve, Color Correction, Color Grading, Audio Mixing, Audio Mastering, Multi-Track Recording, Motion Graphics, 2D Animation, 3D Animation (Newtek Lightwave 3D, Cinema 4D), Visual Effects, Still Image Retouching, Video Editing, Sound Design, Graphic Design, Typography, Title Design, Thumbnail Optimization
+
+Broadcast & Live Production:
+TriCaster, OBS Studio, Multi-Cam Switching, Live Broadcast Direction, Technical Direction, Master Control Operation, Broadcast Graphics, Virtual Set Design, Show Package Creation, On-Air Operations, FCC Compliance, EAS Operations, Satellite Operations, Transmitter Operations, Emergency Broadcast Procedures, Program Logging, Commercial Insertion, Grass Valley Switchers, Ampex Equipment
+
+Audio Engineering:
+Live Sound Engineering, Front of House Audio, Multi-Track Recording, Pro Audio Mixing, Studio Recording, Audio Post-Production, Sound Design, Control Console Operation, Amplification, Equalization, Microphone Technique, Presonus Studio One, Pro Tools, Live Concert Engineering, Music Recording, Instrumental Tracking, Vocal Tracking, Noise Reduction, Audio Archiving
+
+Content Strategy & Marketing:
+Content Strategy, Branded Storytelling, Social Media Campaigns, Social Media Management, Digital Marketing, Audience Engagement, SEO, Google Analytics, Content Scheduling, Email Campaigns, Website Content, Marketing ROI, Brand Visibility, Lead Conversion, Review Generation, Reputation Management, Copywriting, Scriptwriting, Pitch Decks, Proposal Writing, Pricing Strategy
+
+IT, Networking & Technical:
+IT Technician, Computer Networking, System Troubleshooting, Hardware Repair, Software Installation, Security Patch Management, Equipment Maintenance, Broadcast Equipment Repair, Computer Assembly/Disassembly, Network Administration, Office Computer Support, Technical Documentation, Workflow Optimization, Process Streamlining
+
+Leadership & Operations:
+Team Leadership, Crew Management, Project Management, Budget Management, Client Relations, Vendor Coordination, Account Executive Collaboration, Training & Mentoring, New Employee Onboarding, Scheduling, Delegation, Quality Assurance, Deadline Management, Crisis Management, Problem-Solving, Active Listening, Analytical Skills
+
+Music & Performance:
+Piano, Guitar, Songwriting, Music Recording, Live Performance, Music Instruction, Instrument Demonstration, Artist Collaboration
+
+PROFESSIONAL EXPERIENCE — COMPLETE EMPLOYER DATA
+
+CARR MULTIMEDIA
+Address: Houston, TX (Freelance/Remote)
+Phone: (713) 899-1776
+Website: carrmultimedia.com
+Role: Founder / Owner / Operator / Creative Director / Content Strategist / Freelance Video Producer
+Dates: November 2000 – Present
+Complete Duty Inventory (All Versions):
+Lead end-to-end video production for businesses: concept, scripting, filming, editing, delivery, publishing
+Directed/Technical Directed all live event coverage and in-house produced shows and content
+Manage all aspects of production from concept to completion
+Manage entire operations crew
+Create virtual sets and show graphics/packages needed for each show
+Act as video editor whenever needed
+Suggest and maintain station gear used in production
+Manage freelance teams for larger productions; set pricing strategies and proposals
+Develop content strategy plans for small businesses to drive brand engagement
+Promote business across web, social platforms, and email campaigns
+Capture aerial content as FAA-certified UAV drone operator using DJI fleet (5 DJI drones owned)
+Maintain marketing/sales to ensure constant stream of clients
+Directed 200+ multimedia campaigns, increasing client engagement by average of 35%
+Streamlined production workflows, reducing turnaround time by 25% while maintaining high-quality output
+Delivered aerial drone cinematography that shortened real estate sales cycles and enhanced property visibility
+Designed content strategies that boosted client engagement by up to 65% in 90 days
+Negotiated budgets, led crews, and consistently completed projects 10–15% under budget without quality loss
+Directed branded campaigns that directly contributed to six-figure sales events for clients
+Built strong client relationships through personalized service and attentive communication, creating repeat customers
+Taught clients about creative tools and technology, translating complex concepts into approachable guidance
+Led startup and creation of operational procedures and workflow planning
+Oversaw project execution, phase progress, workmanship and team performance to drive on-time completion of deliverables
+Supervised performance of workers with goals of improving productivity, efficiency and cost savings
+Set pricing structures according to market analytics and emerging trends
+Promoted business on social media platforms to maximize brand identity and generate revenue
+Established and maintained MAM/DAM systems for efficient file management and team collaboration
+Edited commercials, corporate videos, social media campaigns, and live events with attention to brand storytelling and pacing
+Managed full post-production: color grading, audio mixing, motion graphics, and still image integration
+Directed and produced projects from concept to delivery; integrated aerial footage with FAA Part 107 certification
+Projects include: Corporate Videos, Commercials, Web/Social Media Videos, Weddings, Event Coverage
+Personal part-time freelance business operating since 2000
+
+WLFT-TV
+Address: 13567 Plank Rd, Baker, LA 70714
+Phone: 225.774.7780
+Role: Production Manager / Director / Technical Director / Director/TD
+Dates: January 2022 – August 2022
+Complete Duty Inventory:
+Directed and managed live shows and in-house productions and crew
+Built virtual sets, motion graphics, and broadcast packages
+Managed production crew and ensured delivery of high-quality streaming content
+Directed live broadcasts, in-house programming, and virtual sets, ensuring 0% downtime across 50+ live events
+Designed broadcast graphics and packages that increased viewer engagement and retention
+Led production crews of 10+, maintaining high-quality output under strict deadlines
+Created virtual sets and show graphics/packages needed for each show
+Acted as video editor whenever needed
+Suggested and maintained station gear used in production
+Directed and managed live event coverage and in-house produced shows and content
+Managed all aspects of production from concept to completion
+Directed live multi-camera newscasts and streaming programs reaching a local audience of 50,000+ viewers weekly
+Introduced virtual sets and custom motion graphics, cutting turnaround time for new shows by 30%
+Elevated production quality while training and leading a cross-functional crew
+
+DFS MARKETING, INC.
+Address: 100 I-45 N, Conroe, TX 77301
+Phone: 855.740.3140
+Role: Production Manager / Content Creator / Content Strategist
+Dates: December 2018 – February 2020
+Complete Duty Inventory:
+Managed, oversaw & trained Creative Team consisting of video production, social media, SEO and website departments
+Produced, Shot & Edited all content for DFS social media, website, branding and promotions
+Produced, Shot & Edited all content for DFS client videos
+Managed all aspects of social media including calendar, schedule, posting, analytics, reporting, paid ads
+Produced, Executed and recorded DFS Live Sales Event production
+Produced all media, PowerPoint, audio assets used within events
+Evaluated, obtained and set up all technical gear for events such as a/v gear, camera and recording gear, monitors, computers, podiums and pa gear, etc.
+Served as in-office IT technician
+Maintained and troubleshot in house computers and network systems
+Part 107 UAV Pilot
+Oversaw creative teams producing branded video campaigns
+Managed digital marketing teams (social media, SEO, website updates)
+Analyzed performance using analytics tools and adjusted content accordingly
+Oversaw live events, video production, and website content, ensuring consistency across platforms
+Mentored creative teams to deliver projects on time and on budget
+Produced client and internal multimedia content, boosting social media engagement by 30%
+Directed live-streamed sales events generating six-figure sales revenue for the company
+Managed social media content calendars, paid ads, analytics, and reporting
+Handled full technical setups for live seminars (audio/visual/stage gear)
+Served as in-house IT technician for systems maintenance and support
+
+CAPITAL TECHNOLOGIES, INC.
+Address: 4203 Yoakum Blvd Suite 200, Houston, TX 77006
+Phone: 713.524.2854 | 832.213.9904
+Role: Video Producer / Audio Engineer / Technical Coordinator
+Dates: October 2011 – September 2016
+Complete Duty Inventory (All Sub-Roles):
+Video Producer:
+Produced media for Texas Flying Legends Museum & non-profit Music Doing Good
+Videoed and Photographed all Texas Flying Legends Museum Airshows and Events for Website, Promotions and Archive
+Traveled with Texas Flying Legends Museum Warbirds to various Airshows and Events around the country acting as On Staff Videographer/Photographer and coordinated with Videographers/Photographers from other vendors
+Shot all Music Doing Good Performances and events with regard to quality and presentation
+Edited all performances and events for archival and promotional purposes
+Shot/Edited all videos and created slideshows needed for Music Doing Good performances, promotions and pre-production
+Shot all field production, b-roll and interviews utilizing cameras, lighting, and sound while maintaining a professional appearance and representation of Music Doing Good
+Produced/mass duplicated all in house DVD videos/promotions
+Operated and maintained all video production equipment including cameras, accessories, lighting, audio recording gear and computers
+Kept abreast of all video production needs and requested/obtained resources when needed
+Aided senior leadership during executive decision-making process by generating daily reports to recommend corrective actions and improvements
+Produced multimedia content for museum and nonprofit clients, driving audience growth of 15–25% per campaign
+Directed live concerts and events with professional audio/video quality
+Maintained studio systems and optimized production workflows
+Produced video and photography for museums and nonprofit organizations
+Audio Engineer:
+Designed and operated all Live Pro-Audio gear for Music Doing Good/Bosarge Family Office events also including Studio related pro-audio systems/studios
+Recorded all Music Doing Good performances in multi-track format when possible, 2-track when not possible
+Edited/Mixed down all multi-track Music Doing Good performances with regard to quality and presentation for archival and promotional use
+Recorded, edited and mixed instrumental and vocal tracks and minimized unwanted sounds
+Operated control consoles to regulate volume levels and sound quality
+Processed audio to meet quality standards and played and mixed music for live events
+Collaborated with producers and performers to determine and achieve desired sound for productions and provided audio system oversight for live shows
+Engineered recording sessions and produced musical soundtracks for artists within various genres
+Archived all audio recordings of Music Doing Good performances
+Operated pro A/V gear for concerts and live events
+Technical Coordinator:
+Collaborated with staff on technical needs of all Music Doing Good/Bosarge Family Office performances and obtained, gathered, moved, installed, and setup any video or pro-audio gear needed for performances, studios, or events
+Recommended system revisions and updates using research and problem-solving talents
+Maintained project schedules by managing deadlines and adjusting workflow
+Troubleshot and maintained all computer hardware and software and all studio pro-audio gear and kept abreast of all current and future pro-audio and A/V technology
+Maintained studio systems and A/V infrastructure for production
+Coordinated all technical requirements for events and maintained A/V systems
+
+REEL CONNECTION MEDIA, INC.
+Address: 16115 Parish Hall Dr, Spring, TX 77379
+Role: Editor / Animator / Videographer / IT Technician
+Dates: June 2006 – October 2011
+Complete Duty Inventory (All Sub-Roles):
+Editor / Animator:
+Produced / Edited commercial and corporate productions, animations, and graphics for RCM Clients
+Worked with Account Executive & Client on creativity, production needs, and ideas
+Managed multiple writing and editing assignments in dynamic environment within stated timelines
+Met all air date deadlines while producing excellent quality work
+Edited corporate and commercial videos, creating motion graphics to support client campaigns
+Designed motion graphics and animations
+Edited and delivered hundreds of commercials and corporate videos under tight deadlines, maintaining a 100% on-time record
+Designed custom motion graphics that differentiated client campaigns and elevated production value
+Videographer / IT Technician:
+Shot high quality SD/HD commercial and corporate production videos
+Edited captured video to tell concise, visually pleasing stories or relay video messages
+Directed video participants to capture specific activities and events
+Light remote production sets with regard to image quality, art design, and production needs
+Operated, maintained, and repaired all computer, networking, cameras, and production equipment
+Recommended new equipment to improve audio, video and presentation capabilities
+Part 107 UAV Pilot
+Filmed on-location productions using advanced lighting and camera rigs
+Managed and maintained editing suites, networking systems, and video gear
+Managed A/V equipment and IT infrastructure
+
+KVHP-TV FOX 29
+Address: 129 W. Prien Lake Rd, Lake Charles, LA 70601
+Role: Head Director / Technical Director / Producer / Engineering Support
+Dates: November 1998 – July 2006
+Complete Duty Inventory (All Sub-Roles):
+Head Director / Technical Director:
+Directed live newscasts, in-house production and remote broadcasts with regard to quality, creativity, and efficiency
+Remained calm and professional in stressful circumstances and effectively diffused tense situations
+Produced and directed all in-house production: Promotions, News Graphics, Specialty Shows, and Events
+Assisted other departments with production needs pertaining to the On-Line Control Room, Studio and Graphics work
+Supervised, scheduled, and maintained training of the part-time operations crew
+Delegated work to staff, setting priorities and goals
+Provided leadership, insight and mentoring to newly hired employees to supply knowledge of various company programs
+Recruited and trained new employees to meet job requirements
+Reviewed completed work to verify consistency, quality and conformance
+Operated and maintained all operations equipment
+Kept abreast of new technology and operational needs, and made suggestions of future equipment purchases
+Directed live broadcasts, promotions, and in-house productions
+Produced commercials and graphics recognized for creative excellence
+Supervised operations staff and ensured broadcast standards
+Directed 2,000+ live broadcasts with zero FCC compliance issues
+Produced award-winning promos, including the Addy Award-winning Sunny That Morning Show campaign
+Supervised a 10-person operations crew, raising efficiency and reducing turnover
+Producer:
+Produced, Shot and edited broadcast commercials, promotional productions, and graphics
+Worked with Account Executives and Clients on production needs/ideas
+Aided senior leadership during the executive decision-making process by generating daily reports to recommend corrective actions and improvements
+Provided top quality control and eliminated downtime to maximize revenue
+Created broadcasting, advertisement, and film content
+Met air date deadlines while producing excellent quality work
+Operated and maintained all computer, camera, and production equipment
+Kept abreast of technology and production equipment needs, and made suggestions on future purchases
+Engineering Support:
+Assisted Engineering Department with installation, maintenance, and repair of all broadcast equipment and computers
+Operated, maintained, networked and repaired all operation computers and related equipment
+Updated software versions with patches and new installations to close security loopholes and protect users
+Disassembled computer systems to troubleshoot and resolve hardware issues
+Explained technology-related details in easy-to-understand terms to individuals from different backgrounds and in various job positions
+Documented repair processes and helped streamline procedures for future technical support actions
+Operated, maintained all on-air operations equipment
+Kept abreast of new technology and operational needs, plus made suggestions to future equipment purchases
+
+KPLC-TV
+Address: 320 Division St, Lake Charles, LA 70601
+Role: Director / Technical Director / Master Control Operator / Video Tape Operator / Audio Operator / Studio Operator
+Dates: September 1992 – August 1998
+Complete Duty Inventory (All Sub-Roles):
+Director / Technical Director:
+Directed Live Newscasts, in-house production, and remote broadcasts regarding quality, creativity, and efficiency
+Supervised operations staff
+Maintained working knowledge of all operations equipment, and kept abreast of new technology and operational needs
+Directed daily live news broadcasts with consistent ratings growth during tenure
+Master Control Operator:
+Executed and performed quality on-air operations for broadcast
+Maintained On-Air Program Log of all shows and commercials broadcasted
+Placed commercial breaks during sports programming, newscasts and TV shows
+Handled quality control for on air content during live news broadcasts
+Previewed scheduled programs to verify signal functionality and transmission readiness
+Operated console controls to regulate video transmission contrast, brightness and fidelity
+Resolved equipment issues by identifying problems and utilizing appropriate troubleshooting methods
+Checked equipment to verify compliance with FCC regulations
+Maintained knowledge of program logs, severe weather, FCC, EAS, satellite, remote broadcasts and transmitter operations and emergency procedures
+Ensured uninterrupted broadcast operations while implementing system upgrades to meet FCC standards
+Video Tape Operator:
+Coordinated and executed work for various departments into broadcast quality videotape productions
+Operated and Maintained 2" Reel to Reel VPR, 3/4 inch, Beta, and DVC Pro Video Decks
+Conferred with directors and crew members to discuss sequences, desired effects and camera movements
+Edited recorded segments to insert music, dialogue and sound effects
+Coordinated with Master Control ensuring daily programming quality and efficiency
+Audio Operator:
+Performed operational work concerning the general appearance and quality of the On-Air talent
+Performed work for various departments into quality productions
+Maintained a working knowledge of all newscast formats, public affairs programs, and production procedures
+Operated and maintain all audio equipment
+Completed preventive maintenance to troubleshoot audio malfunctions
+Monitored quality control of audio sources for live and taped productions, adjusting amplification and equalization
+Assisted Director as needed
+Studio Operator:
+Performed operational work concerning the visual appearance of On-Air talent, set, and studio production
+Maintained a working knowledge of studio cameras, shot composition, lighting, and studio production
+Handled camera setups, angles and movement following cues
+Arranged cameras, audio and lighting equipment for filming
+Composed and framed shots using camera settings and other technical aspects to achieve director requested results
+Operated cameras to record scenes for television broadcasts, advertising or motion pictures
+Helped prepare sets and set up equipment for in-studio filming
+Controlled lighting, filter factors and camera distances to meet shot targets
+Quality checked syndicated programming for problems or errors, and log segment times
+
+EDUCATION & CERTIFICATIONS
+Sowela Technical Institute — Lake Charles, LA
+Electronics / Instrumentmentation
+McNeese State University — Lake Charles, LA
+Music
+Sulphur High School — Sulphur, LA
+High School Diploma, May 1988
+
+FAA Part 107 UAV Drone Pilot Certification
+Initial Certification: March 2017
+Status: Current (2017 – Present)
+Experience: Started flying drones summer 2014
+Equipment: Own 5 DJI Drones
+Certificate Link: https://www.faasafety.gov/files/gslac/courses/certificates/677/2025/Oct/2025Oct804390677.pdf 
+
+AWARDS & RECOGNITION
+Addy Award — Television: Local Self Promotion Campaign for "Sunny That Morning Show" Campaign
+Award Video: youtube.com/watch?v=NXF4G6CtvA4
+
+PORTFOLIO & PROFILES
+Video Portfolio: portfolio.legaisee.com
+Photography Portfolio: photography.carrmultimedia.com/index.html
+LinkedIn: linkedin.com/in/johnmcarrcmm
+
+REFERENCES & VERIFICATION SOURCES
+
+Employer
+Address
+Phone
+Dates
+Potential Reference Title
+WLFT-TV
+13567 Plank Rd, Baker, LA 70714
+225.774.7780
+2022
+Production Manager, GM
+DFS Marketing, Inc.
+100 I-45 N, Conroe, TX 77301
+855.740.3140
+2018-2020
+Owner Julian Daugherty, Creative Director
+Capital Technologies, Inc.
+4203 Yoakum Blvd Ste 200, Houston, TX 77006
+713.524.2854
+2011-2016
+Operations Manager, MDG Director
+Reel Connection Media
+16115 Parish Hall Dr, Spring, TX 77379
+281-797-1601
+2006-2011
+Account Executive, Owner
+KVHP-TV FOX 29
+129 W. Prien Lake Rd, Lake Charles, LA 70601
+(337) 439-9071 
+1998-2006
+News Director, GM, Engineering Chief
+KPLC-TV
+320 Division St, Lake Charles, LA 70601
+(337) 439-9071 
+1992-1998
+News Director, Operations Manager
+
+
+MASTER COVER LETTER — JOHN CARR
+Modular Repository for AI Customization
+HEADER
+John Carr
+📧 john@carrmultimedia.com | 📱 (713) 899-1776
+🌐 carrmultimedia.com | 🔗 linkedin.com/in/johnmcarrcmm
+Houston/Galveston, TX | New Braunfels, TX | Hutto, TX
+[Date]
+[Hiring Manager Name]
+[Company Name]
+[Company Address]
+[City, State ZIP]
+
+OPENING PARAGRAPHS — SELECT ONE BASED ON JOB TYPE
+Option A — Media/Production Roles (General):
+I am excited to apply for the [Position Title] role at [Company Name]. With over 30 years of experience producing content for broadcast, corporate, and digital platforms, I have developed a proven ability to deliver high-quality, engaging video content that drives audience engagement and meets client objectives. As an FAA Part 107 Certified Drone Pilot and award-winning video producer, I have led full-cycle productions—from concept and scripting to filming, live streaming, and post-production. My background includes managing teams for multi-camera shoots, creating motion graphics and virtual sets, and developing content strategies that align with marketing goals. I have extensive experience working with studio and company-provided equipment, making me immediately effective in production environments without relying on personal gear.
+
+Option B — Freelance/Contract Production:
+I am writing to express my interest in freelance videographer/editor opportunities at [Company Name]. With over 20 years in video production across broadcast, corporate, and digital media, I bring proven expertise in directing, shooting, editing, and delivering high-quality content that engages audiences. As an FAA Part 107 Certified Drone Pilot and award-winning producer, I have managed multi-camera shoots, live streams, and post-production workflows for diverse clients, all while effectively leading teams to meet tight deadlines. I am comfortable working with company-provided equipment, including cameras, lighting, and audio gear, and can seamlessly integrate into your production workflow without delay.
+
+Option C — Survival/Local/Retail/Hospitality:
+I am applying for the [Position Title] position at [Company Name]. I am a dependable and hardworking professional with experience in customer service, event support, and team collaboration. I am known for being reliable, quick to learn, and flexible in adapting to new tasks. My background includes assisting with event setups, customer-facing roles, and technical support, which has taught me the importance of teamwork, communication, and efficiency in fast-paced environments. I have reliable transportation and a flexible schedule, and I am eager to bring my strong work ethic and positive attitude to your team at [Company Name]. I am available to start right away.
+
+Option D — Music Retail / Instruction:
+I am excited to apply for the [Position Title] role at [Company Name]. I am a passionate musician and creative professional with over 20 years of experience delivering exceptional customer experiences, training, and guiding audiences. I have been playing piano and guitar since 1984 and gigging consistently since 2004. I am skilled in live production, studio production, crew leadership, communication, problem-solving, and product demonstration. I am adept at engaging customers and clients, building lasting relationships, and achieving sales goals. I would welcome the opportunity to share my love of music and technical expertise with your team.
+
+Option E — Short/Contract Form (Direct):
+My name is John Carr, and I am an award-winning Video Producer & FAA-Certified Drone Pilot with 20+ years creating broadcast, corporate, and digital media content. I am reaching out to explore freelance or staff opportunities at [Company Name]. I have extensive experience leading full-cycle productions, including directing, multi-camera shoots, live streaming, editing, and post-production. My work has helped clients deliver high-quality content that engages audiences and drives results. I am also comfortable working with company-provided equipment, allowing me to contribute immediately without needing personal gear.
+
+BODY PARAGRAPHS — MIX & MATCH BY RELEVANCE
+Production Leadership & Team Management:
+I have led cross-functional teams of 5–15 creatives in live broadcasts, multi-camera productions, and high-profile events. At WLFT-TV, I directed production crews of 10+ while ensuring 0% downtime across 50+ live events. At KVHP-TV FOX 29, I supervised a 10-person operations crew, improving retention and efficiency through structured training programs. I have recruited, trained, and mentored new employees, delegated work, set priorities, and reviewed completed work to verify consistency and quality.
+
+Technical Production & Broadcast:
+I have directed 2,000+ live broadcasts with zero FCC compliance issues. My technical expertise includes TriCaster, OBS Studio, multi-cam switching, virtual set design, broadcast graphics, master control operations, and FCC/EAS compliance. I have operated and maintained broadcast equipment ranging from 2" reel-to-reel VPRs to modern digital systems. I have handled camera setup, shot composition, lighting design, audio engineering, and console control for live and recorded productions.
+
+Post-Production & Creative:
+I am expert in Adobe Creative Suite (Premiere Pro, After Effects, Photoshop, Illustrator, Audition), DaVinci Resolve, Pro Tools, and Presonus Studio One. I have edited hundreds of commercials and corporate videos under tight deadlines while maintaining a 100% on-time record. I have designed motion graphics, animations (2D/3D using Newtek Lightwave 3D and Cinema 4D), color grading, audio mixing, and still image retouching. I have managed MAM/DAM workflows and optimized post-production systems for efficient delivery.
+
+Content Strategy & Digital Marketing:
+I have developed content strategies that amplified brand presence across social media, broadcast, and web platforms. At DFS Marketing, I managed social media calendars, paid ads, analytics, and reporting, fueling 40% follower growth. I have produced live-streamed sales events generating six-figure revenue and boosted client engagement by up to 65% within 90 days. I understand SEO, Google Analytics, content scheduling, email campaigns, and marketing 
+ROI measurement.
+
+Aerial & Specialized Cinematography:
+As an FAA Part 107 Certified Drone Pilot (certified since March 2017), I own and operate 5 DJI drones. I have directed 50+ aerial drone campaigns for corporate, real estate, tourism, and promotional storytelling. I have captured aerial footage that shortened real estate sales cycles and enhanced property visibility. I started flying drones in 2014 and have integrated aerial cinematography into numerous video productions.
+
+Audio Engineering & Music:
+I am a lifelong musician (piano and guitar since 1984) with extensive experience in live and studio multi-track audio production. I have designed and operated live pro-audio gear, recorded multi-track performances, mixed down archival and promotional audio, and engineered recording sessions across various genres. I have operated control consoles, processed audio for quality standards, and provided audio system oversight for live shows and concerts.
+
+IT, Technical Support & Operations:
+I have served as an in-house IT technician, maintaining computer networks, troubleshooting hardware and software issues, and repairing broadcast and production equipment. I have updated software versions with security patches, disassembled computer systems for hardware troubleshooting, and documented repair processes. I have explained technical details in easy-to-understand terms to individuals from various backgrounds.
+
+Client Relations & Business Operations:
+I have built strong client relationships through personalized service, negotiated budgets, and consistently delivered projects 10–15% under budget without quality loss. I have set pricing structures according to market analytics, promoted businesses across social platforms, and managed freelance teams for high-value productions. I have worked directly with account executives and clients on creativity, production needs, and ideas.
+
+Event & Live Production Support:
+I have assisted with setup and breakdown of events including lighting, sound, and staging. I have provided customer service and client support in high-pressure situations, managed schedules, and coordinated small teams to ensure on-time results. I have worked as a server/waiter (Nick's Seafood, Galveston, TX), demonstrating customer service skills in fast-paced environments.
+
+CLOSING PARAGRAPHS — SELECT ONE
+Option A — Standard Professional:
+I would welcome the opportunity to discuss how my experience and approach to video production can benefit your team. Thank you for considering my application, and I look forward to the possibility of contributing to [Company Name]'s ongoing success. I am available for an interview at your earliest convenience and can start immediately.
+
+Option B — Freelance/Contract Focus:
+I would welcome the chance to contribute my skills to your upcoming projects and help deliver compelling video content for your clients. Thank you for your time and consideration—I look forward to the possibility of working with your team. I can integrate seamlessly with your workflow using company-provided equipment and am available to start immediately.
+
+Option C — Survival/Local Job:
+Thank you for your consideration. I look forward to the possibility of contributing to your team at [Company Name], and I am available to start right away. Please feel free to contact me at (713) 899-1776 or john@carrmultimedia.com to schedule an interview.
+
+Option D — Soft/Relationship Close:
+I realize you may not have current openings, but I wanted to offer my services for freelance or temporary production support. If your team ever needs extra capacity, a producer who can lead projects independently, or specialized skills like aerial/drone videography, I would be glad to collaborate. I can start immediately with company-provided gear, making it seamless to integrate into your workflow. Thank you for your time, and I'd be happy to connect at your convenience.
+
+SIGN-OFF
+Sincerely,
+John Carr
+📧 john@carrmultimedia.com | 📱 (713) 899-1776
+
+QUICK-REFERENCE: JOB TYPE → RECOMMENDED MODULES
+Table
+Job Type
+Summary
+Open With
+Body Focus
+Close With
+Video Producer/Director
+Variant A or B
+Option A or B
+Production Leadership + Post-Production + Aerial
+Option A or B
+Editor/Post-Production
+Variant B
+Option A
+Post-Production + Technical Production
+Option A
+Broadcast/Live Events
+Variant A
+Option A
+Technical Production + Production Leadership
+Option A
+Content Strategist/Marketing
+Variant A
+Option A
+Content Strategy + Client Relations
+Option A
+Audio Engineer
+Variant B
+Option A
+Audio Engineering + Music
+Option A
+IT/Technical Support
+Variant D
+Option C
+IT + Technical Support + Event Support
+Option C
+Retail/Hospitality/Survival
+Variant D
+Option C
+Event Support + Client Relations + IT
+Option C
+Music Retail/Instruction
+Variant E
+Option D
+Music + Audio Engineering + Client Relations
+Option C
+Freelance/Contract Media
+Variant B
+Option E
+Mix all production modules
+Option B or D
+
+
+End of Master Documents.
+These masters contain every data point, address, phone number, duty variant, and metric from your uploaded file. When generating a custom resume/cover letter via your Job Hunt App, feed these masters plus the target job description into your AI prompt—it will select the most relevant bullets and paragraphs while preserving all factual source material.
+
+
+REFERENCES
+Joey Wright
+Owner- Reel Connection media
+16115 Parish Hall Dr.
+Spring, Tx 77379
+281-797-1601
+jwright@reelconnectionmedia.com
+Relationship: Previous Employer
+David Laduca
+Creative Director - Music Doing Good
+3315 Roseland St. #1
+Houston, Tx 77006
+713-574-0069
+candocreative@gmail.com
+Relationship: Previous Employer
+Lee Ann Crain
+IT Manager - Capital Technologies
+4203 Yoakum Blvd. Suite 200
+Houston, Tx 77006
+832-213-9904
+leeann@captech.us
+Relationship: Previous Employer
+Ronnie Pace
+Owner - Pace Guitar repair
+7702 Highmeadoow Dr.
+Houston, Tx 77063
+713-339-9100
+ronpace@att.net
+Relationship: Previous Freelance Client
+
+

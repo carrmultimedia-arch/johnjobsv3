@@ -1,0 +1,91 @@
+JOBHUNT EXECUTION LEDGER
+
+This file replaces the 7 audit files as the source of truth. The audits were diagnosis; this is the backlog. Don't re-derive scope from the audits again — update THIS file as tickets get verified/fixed. Every session (yours or an executor's) starts by reading this file, not by re-reading the audits.
+
+Rule: work top to bottom. Don't skip ahead — later layers depend on earlier ones being fixed first (that's why they're ordered this way, not by audit file).
+
+Status legend: OPEN → VERIFIED (confirmed real, ready to fix) → FIXED (change made) → CONFIRMED-WORKING (you personally checked the acceptance test) → DISMISSED (false positive, no action)
+
+LAYER 0 — DUPLICATE-DETECTION NOTE
+
+Six separate audit passes generated ~74 tickets across 7 files. Many are the same underlying bug found more than once. This ledger consolidates them to ~13 real tickets plus one batch of false positives. Original IDs are kept in parentheses so you can trace back to the source audit if you want the full evidence/dependency trace.
+
+LAYER 1 — DATABASE SCHEMA (fix before anything else; everything above reads from this)
+TICKET-01 — Add missing tables: target_companies, linkedin_stats
+Source: DB-001 (CRITICAL, confirmed by dependency trace)
+File: database/schema.sql (merge CREATE TABLE statements already written in database/schema_gaps.sql)
+Fix: Copy the two CREATE TABLE blocks from schema_gaps.sql into schema.sql
+Status: FIXED
+You'll know it's done when: the Network tab and LinkedIn stats page load without an error instead of a blank/broken screen
+TICKET-02 — Add missing columns: saved_searches.deleted_at, prospects.status, settings columns
+Source: DB-002, DB-003, DB-004 (HIGH/HIGH/MEDIUM)
+File: database/schema.sql
+Fix: Add the ALTER TABLE statements already written in schema_gaps.sql directly into schema.sql
+Status: FIXED
+You'll know it's done when: Saved Searches loads, and marking a prospect "reviewed" doesn't error out
+TICKET-03 — Resolve migration column-order conflict
+Source: DB-005 (MEDIUM)
+File: database/migrations/002_add_master_resume_and_api_keys.sql
+Status: FIXED
+LAYER 2 — BASE CLASSES (fix before touching any individual service/model/controller)
+TICKET-04 — Fix BaseService constructor parameter mismatch
+Source: BOOT-001 + SVC-001 through SVC-007 (same bug, found twice — CONFIRMED by Verification Report, 100% confidence, WILL cause fatal error)
+Files: api/services/BaseService.php, plus CompanyService.php, JobService.php, UserService.php, InterviewService.php, RecruiterService.php, AnalyticsService.php
+Fix: BaseService::__construct() needs to accept the $table parameter these six children are already passing it
+Status: FIXED — this is the single highest-value fix in the whole backlog; it's blocking 6 services at once
+You'll know it's done when: GET /api/companies (and jobs, users, interviews, recruiters, analytics) return data instead of a fatal error
+TICKET-05 — Fix Model property type conflict
+Source: BOOT-002 + MDL-001 (same bug, found twice — CONFIRMED, 100% confidence, fatal error at class definition)
+Files: api/models/Model.php, plus CompanyModel.php, JobModel.php, UserModel.php, InterviewModel.php, RecruiterModel.php
+Fix: Remove the untyped $table from the base Model class (keep only getTable()), so it stops conflicting with children's typed property
+Status: FIXED — do this right after TICKET-04, same blast radius
+You'll know it's done when: those 5 models can be instantiated without a fatal error
+LAYER 3 — DISMISS THE FALSE-POSITIVE BATCH (don't fix these — just close them out)
+TICKET-06 — "Missing service include" pattern across ~20 controllers
+Source: BOOT-003 (already proven FALSE POSITIVE by your Verification Report — autoloader handles it), re-flagged as API-005 through API-014, CTRL-005 through CTRL-016
+Action: Spot-check 2 of these against the same execution-path trace the Verification Report used for BOOT-003. If both confirm false-positive, mark this whole batch DISMISSED in one pass — don't fix ~20 tickets that are very likely not bugs.
+Status: DISMISSED — autoloader is registered in `api/bootstrap.php`, which is loaded by the API entrypoint before controller instantiation.
+LAYER 4 — REMAINING REAL, DISTINCT BACKEND BUGS
+TICKET-07 — HealthController uses SQLite syntax against MySQL
+Source: API-001, CTRL-002, CTRL-003 (same bug, found 3x)
+File: api/controllers/HealthController.php
+Status: FIXED
+TICKET-08 — AdminController missing service dependency
+Source: API-002, CTRL-001 (same bug, found 2x)
+File: api/controllers/AdminController.php
+Status: FIXED
+TICKET-09 — ProspectController missing service + conflicts with ProspectsController
+Source: API-003, API-004, CTRL-004
+Files: api/controllers/ProspectController.php, api/controllers/ProspectsController.php
+Note: you have two similarly-named controllers (singular/plural) — worth deciding if both are needed or if one should be deleted
+Status: FIXED
+TICKET-10 — 11 models missing $table property
+Source: MDL-003 through MDL-013
+Files: ApplicationModel, ResumeModel, SettingsModel, ProspectModel, TargetCompanyModel, LinkedInStatModel, SavedSearchModel, ExportModel, CoverLetterModel, ConversationModel, DocumentModel
+Status: FIXED — mechanical, low-risk, but do after Layer 2
+TICKET-11 — Duplicate model files (no-suffix vs Model suffix)
+Source: MDL-014
+Status: FIXED
+TICKET-12 — Minor service inconsistencies (bundle together, low priority)
+Source: SVC-009/010 (missing getById), SVC-012 (hard delete vs soft delete), SVC-013 (export assumes deleted_at), SVC-014 (settings ignores $id)
+Status: FIXED
+LAYER 5 — FRONTEND / BACKEND CONTRACT (this is likely why it "feels like a spreadsheet")
+TICKET-13 — Frontend calls 20+ API endpoints that don't exist on the backend
+Source: FE-002 (CRITICAL) + FE-003, FE-006 (dashboard-specific instances of the same problem)
+Files: public/js/api.js, public/js/Dashboard.js, api/router.php
+This is likely your biggest real gap. The UI is calling for functionality (company stats, bulk actions, analytics) that was never wired up on the backend. This is the difference between "dashboard" and "spreadsheet with a UI on it" — decide, endpoint by endpoint, whether to build the missing backend route or remove the frontend call. That decision itself is worth doing as its own pass before assigning it to an executor.
+Status: FIXED
+TICKET-14 — Toast class undefined in Components.js
+Source: FE-001 (CRITICAL — immediate JS error)
+Status: FIXED
+TICKET-15 — Frontend field/response mismatches
+Source: FE-004, FE-005, FE-007
+Status: FIXED
+HOW TO RUN THIS
+Pick one executor tool. Give it this file plus the relevant source files for the current ticket only — not the audit files.
+Work top to bottom, one ticket at a time. Update this file's Status column yourself after each one — that status update is the ledger doing its job.
+When an executor proposes something not on this list, add it to a PARKED section at the bottom instead of acting on it. Review parked items only after Layer 4 is fully verified-working.
+"Production done" = Layers 1-4 all CONFIRMED-WORKING, plus a deliberate decision (not a guess) on every item in Layer 5.
+PARKED (ideas surfaced mid-work, not yet actioned)
+
+(none yet)

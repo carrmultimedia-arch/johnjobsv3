@@ -1,0 +1,1341 @@
+[13-Jul-2026 20:17:03 America/New_York] PHP Fatal error:  strict_types declaration must be the very first statement in the script in /home/carrmulti/www/johnjobsv2/index.php on line 8
+[13-Jul-2026 20:24:18 America/New_York] PHP Fatal error:  strict_types declaration must be the very first statement in the script in /home/carrmulti/www/johnjobsv2/index.php on line 8
+[15-Jul-2026 18:35:27 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/index.php on line 23
+[15-Jul-2026 18:35:27 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/router.php on line 8
+[15-Jul-2026 18:35:27 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/utils/Response.php on line 33
+[15-Jul-2026 18:35:30 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/index.php on line 23
+[15-Jul-2026 18:35:30 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/router.php on line 8
+[15-Jul-2026 18:35:30 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/utils/Response.php on line 33
+[15-Jul-2026 18:40:32 America/New_York] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/carrmulti/www/johnjobsv2/public/index.php on line 5
+[15-Jul-2026 18:40:33 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/index.php on line 23
+[15-Jul-2026 18:40:33 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/router.php on line 8
+[15-Jul-2026 18:40:33 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/utils/Response.php on line 33
+[15-Jul-2026 18:43:26 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/index.php on line 23
+[15-Jul-2026 18:43:26 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/router.php on line 8
+[15-Jul-2026 18:43:26 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/utils/Response.php on line 33
+[15-Jul-2026 18:44:06 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/index.php on line 23
+[15-Jul-2026 18:44:06 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/router.php on line 8
+[15-Jul-2026 18:44:06 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carrmulti/www/johnjobsv2/index.php:8) in /home/carrmulti/www/johnjobsv2/api/utils/Response.php on line 33
+[15-Jul-2026 19:20:55 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:20:55 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:01 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:03 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:04 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:05 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/DocumentsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): DocumentsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:06 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ConversationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ConversationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:10 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:31 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:36 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:42 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:50 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:55 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:21:59 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:22:16 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:22:16 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:22:22 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:22:48 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:22:53 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:23:07 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:23:12 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:24:17 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:24:17 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:24:23 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:25:14 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:25:14 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:25:41 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:27:55 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:34:56 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:34:56 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:34:56 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:34:56 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:34:56 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:34:56 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:35:15 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:35:15 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:35:15 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:03 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:03 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:03 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:04 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:04 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:04 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:05 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:05 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:05 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:06 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:06 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:06 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/DocumentsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): DocumentsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:09 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:09 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:09 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/TailoredResumesController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): TailoredResumesController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:11 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:11 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:11 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/CoverLettersController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): CoverLettersController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:17 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:17 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:17 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:17 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:17 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:17 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:38 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:38 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:38 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:58 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:58 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:41:58 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:42:28 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:42:28 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 19:42:28 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:08:59 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:08:59 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:08:59 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:08:59 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:08:59 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:08:59 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:00 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:00 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:00 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:17 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:17 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:17 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:38 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:38 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:38 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:38 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:38 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:09:38 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:11:17 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:11:17 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:11:17 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:11:17 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:11:17 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:11:17 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(22): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:24 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:24 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:24 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:24 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:24 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:24 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:27 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:27 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:27 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:40 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:40 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:19:40 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:16 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:16 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:16 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:16 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:16 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:16 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:23 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:23 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:23 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:25 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:25 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:20:25 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:30 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:30 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:30 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/SettingsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): SettingsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:30 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:30 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:30 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ApplicationsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ApplicationsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:31 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:31 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:31 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:43 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:43 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:43 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:51 America/New_York] PHP Warning:  Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:51 America/New_York] PHP Warning:  Undefined array key "Jmc6253277$" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:22:51 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+Stack trace:
+#0 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(17): PDO->__construct('mysql:host=loca...', NULL, Object(SensitiveParameterValue), Array)
+#1 /home/carrmulti/www/johnjobsv2/api/utils/DB.php(26): DB->__construct()
+#2 /home/carrmulti/www/johnjobsv2/api/services/BaseService.php(8): DB::getInstance()
+#3 /home/carrmulti/www/johnjobsv2/api/controllers/ProspectsController.php(5): BaseService->__construct()
+#4 /home/carrmulti/www/johnjobsv2/api/router.php(40): ProspectsController->__construct()
+#5 /home/carrmulti/www/johnjobsv2/api/bootstrap.php(24): require_once('/home/carrmulti...')
+#6 /home/carrmulti/www/johnjobsv2/index.php(21): require_once('/home/carrmulti...')
+#7 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/utils/DB.php on line 17
+[15-Jul-2026 20:29:36 America/New_York] PHP Fatal error:  Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php on line 14
+[15-Jul-2026 20:29:36 America/New_York] [FATAL] Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php:14
+[15-Jul-2026 20:29:36 America/New_York] PHP Fatal error:  Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php on line 14
+[15-Jul-2026 20:29:36 America/New_York] [FATAL] Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php:14
+[15-Jul-2026 20:30:33 America/New_York] PHP Fatal error:  Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php on line 14
+[15-Jul-2026 20:30:33 America/New_York] [FATAL] Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php:14
+[15-Jul-2026 20:30:33 America/New_York] PHP Fatal error:  Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php on line 14
+[15-Jul-2026 20:30:33 America/New_York] [FATAL] Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php:14
+[15-Jul-2026 20:30:35 America/New_York] PHP Fatal error:  Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php on line 14
+[15-Jul-2026 20:30:35 America/New_York] [FATAL] Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php:14
+[15-Jul-2026 20:30:51 America/New_York] PHP Fatal error:  Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php on line 14
+[15-Jul-2026 20:30:51 America/New_York] [FATAL] Cannot redeclare boundary_respond() (previously declared in /home/carrmulti/www/johnjobsv2/index.php:14) in /home/carrmulti/www/johnjobsv2/api/bootstrap.php:14
+[15-Jul-2026 20:36:56 America/New_York] [PHP ERROR] Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+[15-Jul-2026 20:36:56 America/New_York] [PHP ERROR] Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+[15-Jul-2026 20:36:57 America/New_York] [PHP ERROR] Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+[15-Jul-2026 20:37:22 America/New_York] [PHP ERROR] Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+[15-Jul-2026 20:37:27 America/New_York] [PHP ERROR] Undefined array key "carrmultiJobhunt" in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:17
+[15-Jul-2026 20:42:34 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:42:34 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:42:35 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:42:47 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:42:52 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:42:52 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:42:54 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:42:54 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:42:56 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:43:08 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:43:13 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:43:21 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:43:26 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[15-Jul-2026 20:43:31 America/New_York] [UNCAUGHT] Unclosed '[' on line 17 does not match ')' in /home/carrmulti/www/johnjobsv2/api/utils/DB.php:21
+[17-Jul-2026 18:29:46 America/New_York] PHP Fatal error:  Uncaught Error: Class "BaseService" not found in /home/carrmulti/www/johnjobsv2/api/services/AIService.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/services/AIService.php on line 10
+[17-Jul-2026 18:39:16 America/New_York] PHP Fatal error:  Uncaught Error: Class "Model" not found in /home/carrmulti/www/johnjobsv2/api/models/User.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/models/User.php on line 10
+[17-Jul-2026 18:52:31 America/New_York] PHP Fatal error:  Uncaught Error: Class "BaseService" not found in /home/carrmulti/www/johnjobsv2/api/services/AIService.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/services/AIService.php on line 10
+[17-Jul-2026 21:22:20 America/New_York] [UNCAUGHT] Call to undefined method CompanyModel::getTable() in /home/carrmulti/www/johnjobsv2/api/services/CompanyService.php:13
+[13-Aug-2026 09:20:19 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 09:20:25 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 15:24:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 15:41:52 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:18:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:19:42 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:22:10 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:23:06 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:23:16 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:23:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:29:23 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:29:58 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:30:40 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:31:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 16:31:35 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 17:58:20 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 18:01:32 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 18:02:11 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 18:15:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 18:23:11 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 18:24:05 America/New_York] [PHP ERROR] file_put_contents(/home/carrmulti/www/johnjobsv2/documents/others/test-13.txt): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:33
+[13-Aug-2026 18:24:13 America/New_York] [PHP ERROR] file_put_contents(/home/carrmulti/www/johnjobsv2/documents/others/test-14.txt): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:33
+[13-Aug-2026 18:24:18 America/New_York] [PHP ERROR] file_put_contents(/home/carrmulti/www/johnjobsv2/documents/others/test-15.txt): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:33
+[13-Aug-2026 18:24:23 America/New_York] [PHP ERROR] file_put_contents(/home/carrmulti/www/johnjobsv2/documents/others/test-16.txt): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:33
+[13-Aug-2026 18:26:13 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[13-Aug-2026 19:08:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:40
+[14-Aug-2026 00:56:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 00:56:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:29:42 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:41:07 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:41:43 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:42:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:42:59 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:43:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:44:26 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:44:51 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:45:59 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:46:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:48:35 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:49:00 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:50:24 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:51:16 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:52:05 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:53:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:53:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:54:39 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:55:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:55:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:56:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:57:23 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 01:58:55 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:00:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:01:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:01:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:02:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:03:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:03:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:05:00 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:05:17 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:06:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:06:40 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:07:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:08:16 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:10:57 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:11:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:11:13 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:23:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:42:54 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:43:11 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:43:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:46:13 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:48:00 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:48:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:50:06 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:50:13 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:50:32 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:51:03 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:51:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:51:54 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:52:15 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:52:40 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:53:20 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:53:21 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:53:27 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:53:50 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:53:52 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:54:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:55:10 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:55:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:55:32 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:56:41 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:56:43 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:57:40 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:57:44 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:58:06 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:58:06 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:59:06 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:59:07 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:59:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:59:51 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 02:59:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:00:25 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:00:58 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:01:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:02:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:02:59 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:04:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:04:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:04:29 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:05:18 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:05:21 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:05:57 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:07:43 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:09:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:10:23 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:10:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:11:44 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:12:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:13:03 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:13:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:38:02 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:40:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:56:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:56:28 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:57:07 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:57:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 03:59:32 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:03:34 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:06:17 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:06:20 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:09:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:10:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:11:58 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:12:04 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:12:06 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:12:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:13:48 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:14:40 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:14:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:14:50 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:15:00 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:19:41 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:19:42 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:23:34 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:25:03 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:25:42 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:29:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:31:09 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:31:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:32:28 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:33:21 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:34:09 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:38:30 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:38:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[14-Aug-2026 04:41:26 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[15-Aug-2026 17:02:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[15-Aug-2026 17:09:02 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[15-Aug-2026 17:09:35 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[15-Aug-2026 17:26:39 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[15-Aug-2026 17:36:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[15-Aug-2026 17:37:20 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[15-Aug-2026 17:38:15 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[15-Aug-2026 17:53:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[15-Aug-2026 18:30:40 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 02:36:09 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 02:36:17 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 02:40:28 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 02:45:03 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 02:45:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 02:50:37 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 02:58:19 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 02:58:21 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 03:04:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 03:06:26 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 03:11:39 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 03:11:53 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 03:12:00 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 14:19:43 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 14:19:52 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 14:26:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 14:27:39 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 14:35:01 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 14:46:39 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 14:49:26 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 14:49:50 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 15:45:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 19:45:58 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 19:47:17 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 19:52:51 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 19:59:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 19:59:25 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 20:02:55 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 20:26:16 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 20:26:24 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 20:26:35 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 20:34:28 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 20:36:00 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 20:44:50 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 20:48:44 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:18:21 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:19:19 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:24:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:31:55 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:32:00 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:47:39 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:54:30 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:55:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:55:51 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:57:48 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:57:54 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 22:59:57 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 23:00:04 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 23:00:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 23:00:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 23:01:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 23:02:24 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 23:10:51 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 23:11:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[16-Aug-2026 23:15:41 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:08:30 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:13:19 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:13:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:14:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:15:09 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:16:05 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:16:52 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:17:05 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:17:10 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:17:45 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:17:50 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:17:55 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:21:12 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:21:14 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:21:16 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:21:20 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:21:25 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:21:45 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:23:32 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:24:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:24:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:30:00 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:32:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:32:48 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:34:24 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 01:48:20 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:51:14 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 01:51:19 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 02:09:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:18:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:18:24 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 02:18:35 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 02:18:39 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 02:18:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:18:54 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 02:19:05 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 02:19:35 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[17-Aug-2026 02:23:43 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:27:09 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:28:05 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:28:20 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:31:54 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:31:55 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:46:52 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:52:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 02:57:58 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:22:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:22:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:29:00 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:32:07 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:34:53 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:36:19 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:36:24 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:36:28 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:36:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:36:37 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:36:41 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:36:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:37:41 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:40:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:40:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:40:57 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:41:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:41:44 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:41:58 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:42:57 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:43:55 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 03:46:52 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 04:00:34 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 04:01:07 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 04:01:17 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 04:02:30 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 04:02:50 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 12:21:34 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[17-Aug-2026 12:25:13 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 10:20:32 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 10:41:55 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 10:48:55 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 12:00:58 America/New_York] PHP Warning:  file_get_contents(/home/carrmulti/www/johnjobsv2/today_jobs.php): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/delete_job.php on line 16
+[18-Aug-2026 12:00:58 America/New_York] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home/carrmulti/www/johnjobsv2/delete_job.php:16) in /home/carrmulti/www/johnjobsv2/delete_job.php on line 18
+[18-Aug-2026 12:03:31 America/New_York] PHP Warning:  file_get_contents(/home/carrmulti/www/johnjobsv2/today_jobs.php): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/delete_job.php on line 16
+[18-Aug-2026 12:03:31 America/New_York] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home/carrmulti/www/johnjobsv2/delete_job.php:16) in /home/carrmulti/www/johnjobsv2/delete_job.php on line 18
+[18-Aug-2026 12:03:54 America/New_York] PHP Warning:  file_get_contents(/home/carrmulti/www/johnjobsv2/today_jobs.php): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/delete_job.php on line 16
+[18-Aug-2026 12:03:54 America/New_York] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home/carrmulti/www/johnjobsv2/delete_job.php:16) in /home/carrmulti/www/johnjobsv2/delete_job.php on line 18
+[18-Aug-2026 12:43:53 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 13:59:26 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 13:59:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 14:40:39 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 14:42:27 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 14:58:19 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 15:01:05 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 15:01:09 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 16:06:10 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 16:47:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 16:48:01 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 16:54:52 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 17:09:05 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 17:09:11 America/New_York] [PHP ERROR] require_once(/home/carrmulti/www/johnjobsv2/lib/dompdf/autoload.php): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/api/controllers/ResumesController.php:93
+[18-Aug-2026 17:09:18 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 17:09:25 America/New_York] [PHP ERROR] require_once(/home/carrmulti/www/johnjobsv2/lib/dompdf/autoload.php): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/api/controllers/CoverLettersController.php:81
+[18-Aug-2026 17:09:53 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 17:10:02 America/New_York] [PHP ERROR] require_once(/home/carrmulti/www/johnjobsv2/lib/dompdf/autoload.php): Failed to open stream: No such file or directory in /home/carrmulti/www/johnjobsv2/api/controllers/ResumesController.php:93
+[18-Aug-2026 17:17:26 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 17:27:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 17:29:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 18:05:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 18:05:41 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 18:05:58 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 19:40:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 19:40:37 America/New_York] [UNCAUGHT] Call to undefined method DB::beginTransaction() in /home/carrmulti/www/johnjobsv2/api/services/ApplicationService.php:33
+[18-Aug-2026 19:58:57 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 19:59:15 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 19:59:26 America/New_York] [UNCAUGHT] Call to undefined method DB::beginTransaction() in /home/carrmulti/www/johnjobsv2/api/services/ApplicationService.php:33
+[18-Aug-2026 20:07:09 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 20:07:15 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 20:07:51 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 20:07:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 20:14:20 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 20:15:19 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[18-Aug-2026 20:15:24 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[18-Aug-2026 20:15:31 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[18-Aug-2026 20:15:36 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[18-Aug-2026 20:15:58 America/New_York] Controller file not found: /home/carrmulti/www/johnjobsv2/api/controllers/Tailored_resumesController.php for resource: tailored_resumes
+[18-Aug-2026 20:51:57 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 21:04:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 21:04:18 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 21:04:59 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 21:09:25 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 21:12:24 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:00:42 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:01:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:02:01 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:02:35 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:03:52 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:07:20 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:08:20 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:10:05 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:13:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:21:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:21:35 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:43:27 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[18-Aug-2026 22:45:04 America/New_York] [UNCAUGHT] Call to undefined method DB::beginTransaction() in /home/carrmulti/www/johnjobsv2/api/services/JobService.php:78
+[19-Aug-2026 01:33:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 01:37:55 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 01:37:55 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 01:37:57 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 01:37:57 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 01:38:07 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 01:38:07 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 01:38:13 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 01:38:13 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 01:39:48 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 01:39:48 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 02:02:13 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 02:02:13 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 02:13:22 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 02:13:22 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 02:13:29 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 02:13:29 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 02:13:30 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 02:13:30 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 02:17:02 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 02:17:02 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 02:17:32 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 02:17:32 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 02:17:54 America/New_York] PHP Fatal error:  Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php on line 54
+[19-Aug-2026 02:17:54 America/New_York] [FATAL] Cannot redeclare ProspectService::batchUpdateSort() in /home/carrmulti/www/johnjobsv2/api/services/ProspectService.php:54
+[19-Aug-2026 02:20:43 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 02:25:07 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 02:25:15 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 02:32:53 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 02:38:23 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 03:32:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 03:33:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 03:33:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 19:37:53 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 20:01:40 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 20:23:25 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 20:27:43 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 20:30:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[19-Aug-2026 23:42:58 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 00:53:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 01:09:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 01:11:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 07:09:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 07:11:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 07:14:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 07:14:42 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 07:14:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 07:15:06 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 07:15:59 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 07:20:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 09:29:11 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 09:56:48 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:15:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:45:42 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:49:55 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:50:13 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:51:11 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:53:17 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:54:15 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:54:30 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:55:02 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 10:55:18 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 11:27:07 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 11:27:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 11:39:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 12:00:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 12:08:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 12:14:50 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 12:15:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 12:57:07 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 12:57:42 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:06:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:10:08 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:10:27 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:10:47 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:11:05 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:11:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:11:32 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:11:48 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:11:56 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:12:02 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:12:10 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:12:15 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:14:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:14:20 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:14:26 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:14:34 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:15:19 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:15:23 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:15:29 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:15:34 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:15:58 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:16:50 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:22:29 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:23:18 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:23:22 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:26:16 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:26:44 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:27:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:27:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:27:35 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:27:48 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:28:29 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:28:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:28:35 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:29:33 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:29:40 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:29:43 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:29:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:30:07 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:30:16 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:30:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:31:05 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:31:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:31:31 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:31:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 13:31:45 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 14:40:15 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 14:42:30 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 15:16:05 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 15:17:19 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 15:30:52 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 17:15:16 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 17:15:59 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 17:17:52 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 17:23:24 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 17:25:34 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 19:13:27 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 19:13:41 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 19:21:19 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 19:46:39 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 19:47:14 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 19:47:28 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 19:48:12 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 19:52:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 20:51:55 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 20:53:01 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 20:54:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 20:54:38 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 21:49:49 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 21:53:21 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 21:56:03 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[20-Aug-2026 22:05:23 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[23-Aug-2026 07:07:22 America/New_York] PHP Fatal error:  Uncaught Error: Class "Response" not found in /home/carrmulti/www/johnjobsv2/api/router.php:80
+Stack trace:
+#0 {main}
+  thrown in /home/carrmulti/www/johnjobsv2/api/router.php on line 80
+[23-Aug-2026 07:12:36 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[23-Aug-2026 12:04:13 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[23-Aug-2026 12:05:06 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[23-Aug-2026 12:19:06 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[23-Aug-2026 12:22:34 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[23-Aug-2026 12:23:37 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[23-Aug-2026 12:36:43 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43
+[23-Aug-2026 12:36:46 America/New_York] [PHP ERROR] file_get_contents(): Read of 12288 bytes failed with errno=21 Is a directory in /home/carrmulti/www/johnjobsv2/api/utils/FileStorage.php:43

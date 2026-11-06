@@ -1,0 +1,45 @@
+<!-- Job Card  -->
+<div class="col-lg-4 job-item">
+  <div class="job-card">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <span class="score score-medium">7.7</span>
+    </div>
+    <div class="job-label">Company</div>
+    <div class="job-value fs-5">Various — Washington DC Market</div>
+    <div class="job-label mt-2">Job Title</div>
+    <div class="job-value">Senior Video Producer</div>
+    <div class="job-label mt-2">Salary</div>
+    <div class="job-secondary">$115,000 – $170,000</div>
+    <div class="job-label mt-2">Location</div>
+    <div class="job-secondary">Washington, DC / Remote Eligible</div>
+    <div class="job-label mt-2">Source</div>
+    <div class="job-secondary">LinkedIn</div>  
+    <div class="job-label mt-3">Apply Link</div>
+    <div><a href="https://to.indeed.com/aa6889ymlmd" target="_blank">Apply</a></div>
+
+    <div class="job-label mt-2">Date Posted</div>
+    <div class="job-secondary">Active — Multiple Openings</div>
+    <div class="mt-3">
+      <button class="btn btn-sm btn-gold" onclick="toggleDetails(this)">View</button>
+      <button class="btn btn-sm btn-outline-light" onclick="copyJob(this)">Copy</button>
+      <button class="btn btn-sm btn-delete" onclick="deleteJob(this)">Delete</button>
+      <button class="btn btn-sm btn-gold">Import</button>
+    </div>
+    <div class="details hidden">
+      <div class="job-label mt-3">Summary</div>
+      <div class="job-secondary">186+ Senior Video Producer openings in the Washington DC market across media, government contracting, corporate communications, and agency sectors. Roles range from newsroom production to branded content and documentary work.</div>
+      <div class="job-label mt-3">Employment Type</div>
+      <div class="job-secondary">Full-time / Contract</div>
+      <div class="job-label mt-3">Apply Link</div>
+      <div class="job-secondary">LinkedIn Jobs — Washington DC filter</div>
+      <div class="job-label mt-3">Required Skills</div>
+      <div class="job-secondary">Senior video production, project management, team leadership, budget oversight, client relations, multi-platform delivery, Adobe Creative Suite, broadcast standards.</div>
+      <div class="job-label mt-3">Why This Matches</div>
+      <div class="job-secondary">High-density market for senior video producers with government, media, and corporate demand. Strong salary band with benefits packages common.</div>
+      <div class="job-label mt-3">Notes</div>
+      <div class="job-secondary">Market average: $130,697/year. Range spans $91K–$170K depending on sector (government vs. private). Security clearance roles available at upper end.</div>
+    </div>
+  </div>
+</div>
+
+

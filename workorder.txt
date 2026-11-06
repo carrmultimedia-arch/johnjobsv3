@@ -1,0 +1,370 @@
+JOBHUNT COMMAND CENTER — MASTER WORK ORDER
+
+Version: 2.0 (Restart 5) — supersedes v1.0, switched SQLite → MySQL
+Author: Claude (Architect)
+Status: AUTHORITATIVE — supersedes 2102, 2111, 0230, and 0220 where they conflict
+
+HOW TO USE THIS DOCUMENT
+
+Give this entire file to Windsurf as the ONLY spec for this build. Do not also hand it
+the old PROJECT_BIBLE files. Build in a fresh local folder on your drive first
+(e.g. ~/jobhunt-build/), pointed at the SAME live MySQL database (Part 2 is that
+database's real, already-existing schema, not a new one) — nothing else touches the
+live server until Phase 6.
+
+
+PART 0 — WHY THE LAST 4 BUILDS FAILED, AND WHAT CHANGED IN v2
+
+Original diagnosis (still true):
+
+
+2102_BUILD_ORDER said MySQL. 0220_FILE_REGISTRY/0230_BUILD_ORDER said SQLite.
+Two executors built two incompatible backends.
+2102 claimed all 12 controllers complete; 2111 said 7 of 12 were broken;
+0230's own tracker said only Phase 1 of 11 was done. Three conflicting states.
+2111's endpoint spec forbids endpoints (prospects/batch-discard, settings,
+target-companies, linkedin-stats) that the locked frontend calls directly.
+The frontend HTML itself has ~15 onclick handlers pointing at undefined JS
+functions, plus name mismatches (saveProfile() called, saveSettings() defined).
+
+
+v2 correction: SQLite was never actually gotten working in this environment —
+MySQL was. v1 of this document guessed at a schema; you've since pulled the structure
+of the real, already-existing MySQL database. That real schema is more complete than
+my guess and is now adopted as-is in Part 2, with a short list of minimal, additive
+gaps (columns/tables the current schema is missing that the locked frontend needs).
+Nothing in the real schema gets redesigned — only extended where genuinely absent.
+
+Rulings, locked for this build:
+
+
+Database engine: MySQL (confirmed previously working). pdo_mysql required.
+Schema: the real live schema (Part 2), not invented. Gaps get additive ALTER/
+CREATE statements only — never a redesign of an existing table.
+Scope: build full CRUD for all entities the schema already defines (companies,
+jobs, recruiters, interviews, users included) since the schema already
+supports them — but Phase 3 build/test order still goes in the sequence the
+frontend actually uses first, so you get a working UI fast and the rest follows.
+The 2111 "forbidden endpoints" ruling stays overridden: frontend is ground truth
+for what the API must serve.
+Part 5 (JS fixes) is unchanged from v1 — those bugs are in the frontend file itself,
+independent of database engine.
+
+
+
+PART 1 — LOCKED ARCHITECTURE
+
+
+PHP 8.x, MySQL (via PDO, prepared statements only), vanilla JS frontend
+config.php holds host/db name/user/password — real values are in Phase 0 below
+(host localhost, db carrmulti_jobhunt, user carrmulti). Do not regenerate or
+guess these.
+All API responses use the envelope in Part 3
+Soft deletes: every table has deleted_at; DELETE sets it, never removes rows
+(already true of every table in the real schema except saved_searches — see Part 2 gap list)
+BaseController.php, BaseService.php, Model.php already exist in your tree —
+reuse them
+No placeholder code, no TODOs, no partial endpoints
+
+
+Folder structure
+
+/config.php                — MySQL credentials, environment flag
+/.htaccess                  — route everything to index.php
+/index.php                  — front controller
+/api/bootstrap.php
+/api/router.php
+/api/utils/DB.php           — PDO MySQL connection, prepared statements only
+/api/utils/Response.php     — envelope formatter (Part 3)
+/api/utils/Validator.php
+/api/utils/Logger.php
+/api/utils/FileStorage.php  — writes/reads document files (Part 2 gap notes)
+/api/controllers/BaseController.php
+/api/controllers/{Application,Prospect,Document,Conversation,Resume,CoverLetter,
+                   SavedSearch,TargetCompany,LinkedInStats,Settings,Export,
+                   Company,Job,Recruiter,Interview}Controller.php
+/api/services/  + /api/models/   — mirror controllers 1:1
+/database/schema_gaps.sql   — ONLY the additive changes in Part 2 (never re-run full schema)
+/public/index.php           — the frontend (Part 5 fixes applied)
+/documents/{resumes,cover_letters,job_descriptions,notes,exports}/
+/logs/{app.log,api.log,error.log}
+
+
+PART 2 — DATABASE SCHEMA (the real, already-existing schema — do not recreate it)
+
+This is what's already live. Windsurf connects to it; it does NOT run a fresh
+CREATE TABLE pass over these. Only run the gap-fix statements at the bottom.
+
+applications: id, company, company_id→companies, job_id→jobs, title, location,
+  method, status(default 'draft'), url, notes, salary, outcome, applied_at,
+  follow_up_at, resume_version_id→resumes, cover_letter_version_id→cover_letters,
+  created_at, updated_at, deleted_at
+
+companies: id, name, industry, location, size, website, description,
+  status(default 'active'), created_at, updated_at, deleted_at
+
+conversations: id, owner_type, owner_id, contact_name, contact_role, channel,
+  direction, subject, content(longtext), date_sent, follow_up_needed,
+  follow_up_date, notes, metadata(json), created_at, updated_at, deleted_at
+
+cover_letters: id, title, content(longtext), version(default 1), metadata(json),
+  created_at, updated_at, deleted_at
+
+documents: id, owner_type, owner_id, document_type, title, file_path,
+  version(default 1), metadata(json), created_at, updated_at, deleted_at
+
+exports: id, user_id, type, format, file_path, status, metadata(json),
+  created_at, updated_at
+
+interviews: id, application_id→applications, recruiter_id→recruiters,
+  interview_type, scheduled_at, completed_at, outcome, feedback, notes,
+  created_at, updated_at, deleted_at
+
+jobs: id, company_id→companies, title, description, location, employment_type,
+  salary_range, source_url, external_id, status(default 'open'), posted_at,
+  created_at, updated_at, deleted_at
+
+prospects: id, company, company_id→companies, name, title, role_type, email,
+  phone, linkedin, url, description, source, rating, priority_score,
+  created_at, updated_at, deleted_at
+
+recruiters: id, company_id→companies, name, role, email, phone, linkedin, notes,
+  created_at, updated_at, deleted_at
+
+resumes: id, title, content(longtext), version(default 1), metadata(json),
+  created_at, updated_at, deleted_at
+
+saved_searches: id, user_id, name, query, source, filters(json),
+  alert_frequency, created_at, updated_at   [NO deleted_at — gap, see below]
+
+settings: id, user_id, name, email, phone, linkedin, portfolio, salary,
+  arrangement, category, key, value, created_at, updated_at, deleted_at
+
+users: id, name, email(unique), password_hash, role(default 'user'),
+  created_at, updated_at, deleted_at
+
+GAPS — the ONLY schema changes to make, as one migration file schema_gaps.sql:
+
+sql-- 1. Prospect Cue needs a workflow status; nothing in the schema tracks it.
+ALTER TABLE prospects
+  ADD COLUMN status VARCHAR(50) NOT NULL DEFAULT 'new' AFTER rating;
+
+-- 2. saved_searches has no soft-delete column; every other table does.
+ALTER TABLE saved_searches
+  ADD COLUMN deleted_at DATETIME NULL AFTER updated_at;
+
+-- 3. settings is missing three profile fields the frontend's Settings tab needs.
+ALTER TABLE settings
+  ADD COLUMN target_location VARCHAR(255) NULL AFTER arrangement,
+  ADD COLUMN bio TEXT NULL AFTER target_location,
+  ADD COLUMN master_resume LONGTEXT NULL AFTER bio;
+
+-- 4. Seed a single local user + a single settings row if not already present.
+INSERT IGNORE INTO users (id, name, email, role)
+  VALUES (1, 'John Carr', 'john@carrmultimedia.com', 'user');
+INSERT IGNORE INTO settings (id, user_id, name, email, phone)
+  VALUES (1, 1, 'John Carr', 'john@carrmultimedia.com', '(713) 899-1776');
+
+-- 5. Two tables genuinely don't exist anywhere in the schema and the frontend
+--    needs them (Network tab's target-company list, LinkedIn activity counter).
+--    These are net-new, not redesigns of anything existing.
+CREATE TABLE target_companies (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  company VARCHAR(255) NOT NULL,
+  target_role VARCHAR(255) NULL,
+  hiring_manager VARCHAR(255) NULL,
+  notes TEXT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  deleted_at DATETIME NULL
+);
+
+CREATE TABLE linkedin_stats (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  week_of DATE NOT NULL,
+  connections INT DEFAULT 0,
+  messages INT DEFAULT 0,
+  responses INT DEFAULT 0,
+  calls INT DEFAULT 0,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+Field-mapping notes controllers must implement (schema name ↔ frontend field name)
+
+
+applications: frontend sends date_applied → store in applied_at column.
+When returning a row, alias applied_at back to date_applied in the JSON so the
+existing frontend code doesn't need to change.
+prospects: frontend's Prospect Cue reads/writes status directly — now a real
+column after the gap fix. No other mapping needed; company, title, url,
+description, source, rating already match.
+documents: frontend sends content (raw text) in the POST body. The controller
+does NOT store this in a content column — there isn't one. Instead:
+FileStorage::write() saves the text to
+/documents/{document_type}s/{slugified-title}-{id}.txt, and the row stores that
+path in file_path. company and job_title from the form go into metadata
+(JSON: {"company":"...","job_title":"..."}). type from the form → document_type
+column, name → title. On GET, the controller reads the file back and returns it
+as content in the response so the frontend's editor still works unmodified.
+tailored-resumes endpoint → resumes table: name → title, content →
+content. target_role, company, keywords → metadata JSON.
+cover-letters: company + — + title → title column (so it's readable
+in a plain list), generated_text → content. hiring_manager, tone, jd_text,
+company_detail → metadata JSON.
+saved_searches: frontend's url field → query column.
+settings: single row, id = 1. Flat columns (name, email, phone,
+linkedin, portfolio, salary, arrangement, target_location, bio,
+master_resume) map directly to frontend field names once you strip the set-
+prefix (e.g. set-salary → salary). The category/key/value columns are
+NOT used this phase — reserved, ignore them.
+
+
+
+PART 3 — API RESPONSE ENVELOPE (unchanged from v1, every endpoint, no exceptions)
+
+Success, list: {"success": true, "data": {"items": [...], "total": N}, "error": null}
+Success, single/action: {"success": true, "data": {...}, "error": null}
+Failure: {"success": false, "data": null, "error": {"message": "..."}}
+Response.php is the only place that builds these. No controller echoes JSON directly.
+
+
+PART 4 — ENDPOINT CONTRACT
+
+URL path (unchanged — frontend already calls these)Backing table/api/applications (+/{id})applications/api/prospects (+/{id}, /batch-discard, /review)prospects/api/documents (+/{id})documents (+ files on disk, see Part 2)/api/conversations (+/{id})conversations (owner_type='general', owner_id=0 when not tied to an application)/api/tailored-resumes (+/{id})resumes/api/cover-letters (+/{id})cover_letters/api/saved-searches (+/{id})saved_searches/api/target-companies (+/{id})target_companies (new)/api/linkedin-statslinkedin_stats (new)/api/settingssettings (single row, id=1)/api/exportdumps every table listed above as one JSON file
+
+Deferred to a later work order (schema already supports these, frontend doesn't call
+them yet, don't build this round): companies, jobs, recruiters, interviews,
+users/auth.
+
+list() filters WHERE deleted_at IS NULL on every table that has the column
+(all of them after the gap fixes). delete() sets deleted_at, never DELETE FROM.
+
+
+PART 5 — FRONTEND FIXES (unchanged from v1 — apply to public/index.php)
+
+Add these missing functions (called by onclick, never defined):
+saveMasterResume, loadMasterResume, copyMasterResume, generateTailoredResume,
+extractKeywords, saveTailoredResume, exportTailoredPDF, copyTailoredResume,
+generateCoverLetter, saveGeneratedCoverLetter, exportCoverPDF, copyCoverLetter,
+addContact, clearContactForm, renderContacts, exportContacts, closeNetDetail,
+openLinkedInProfile, sendEmailToContact, logInteraction, deleteCurrentContact,
+editCompanyNote, addCompanyNote, copySearchQuery, simulateATSScore,
+toggleTheme, saveAPIKeys, testAPIConnection, clearAllData, importData,
+renderProspectCue (alias that calls loadProspectCue()).
+
+Fix name mismatches:
+
+
+saveProfile() is called; only saveSettings() exists — rename to saveProfile,
+POST to /api/settings with all profile fields including bio, target_location.
+addSearchQuery() is called; only addSavedSearch() exists — rename to match,
+reading #new-search-name / #new-search-query.
+
+
+saveMasterResume() should POST {master_resume: <textarea value>} to
+/api/settings (now that master_resume is a real column) instead of
+localStorage.setItem — this is the fix for "Save Master Resume" currently doing
+nothing durable.
+
+generateTailoredResume() / generateCoverLetter() populate their output textarea
+with a prompt template + pasted JD, ready to paste into an AI chat — same pattern as
+the existing copy-block prompts elsewhere on the page. Do not build a live AIService
+this phase. Wire the adjacent "Save" buttons to actually POST to the real endpoints.
+
+
+PART 6 — BUILD ORDER
+
+Phase 0 — Clean slate
+
+
+New empty local folder. Confirm PHP 8+ and pdo_mysql extension (php -m | grep -i mysql).
+MySQL credentials (already known — put these in config.php, do not regenerate):
+
+Host: localhost
+Database: carrmulti_jobhunt
+User: carrmulti
+Password: Jmc6253277$
+Note: this is a live production database, not a local throwaway — every phase
+from here on is reading/writing real data. Back up the database before Phase 2
+(mysqldump -u carrmulti -p carrmulti_jobhunt > backup_pre_rebuild.sql) so the
+gap-fix migration is reversible if something goes wrong.
+
+
+
+Copy BaseController.php, Model.php, BaseService.php from the existing tree.
+Gate: php -v, php -m clean; mysql -h localhost -u carrmulti -p carrmulti_jobhunt -e "SHOW TABLES;"
+lists the 13 tables in Part 2.
+
+
+Phase 1 — Core
+Build config.php, .htaccess, index.php, api/bootstrap.php, api/router.php,
+api/utils/DB.php, api/utils/Response.php. Add a trivial /api/health route.
+
+
+Gate: php -S localhost:8000; curl localhost:8000/api/health returns
+{"success":true,"data":{"status":"ok"}}.
+
+
+Phase 2 — Database gap fixes
+Run database/schema_gaps.sql (Part 2) against the real database — nothing else.
+
+
+Gate: DESCRIBE prospects; shows status; DESCRIBE settings; shows
+target_location, bio, master_resume; SHOW TABLES; includes
+target_companies and linkedin_stats; SELECT * FROM settings WHERE id=1;
+returns the seeded row.
+
+
+Phase 3 — Controllers, one at a time, in this order:
+settings → applications → prospects → documents → conversations → tailored-resumes
+(resumes table) → cover-letters → saved-searches → target-companies →
+linkedin-stats → export.
+Build api/utils/FileStorage.php before the documents controller — resumes and
+cover-letters controllers need only the DB, documents needs file read/write too.
+Test every verb with curl before starting the next controller.
+
+
+Gate per controller: GET (empty list) → POST (create) → GET (shows it) → PUT
+(persists) → DELETE (disappears from list, deleted_at set in DB, row still exists).
+Documents controller extra gate: POST with content text creates a real .txt
+file under /documents/{type}s/, and a subsequent GET returns that file's content
+back as content in the JSON.
+
+
+Phase 4 — Frontend
+Apply Part 5 fixes. Point API_BASE at /api/.
+
+
+Gate: click every nav item, every Add/Save/Delete button. No console errors.
+Reload the page after each save and confirm it's still there (proves it hit MySQL,
+not localStorage).
+
+
+Phase 5 — Full local walkthrough
+Add a prospect → move to pipeline → add a document (confirm file appears on disk) →
+log a conversation → save master resume → generate + save a tailored resume → edit
+profile settings → export data → confirm the download has real content.
+
+
+Gate: zero PHP warnings in logs/error.log across the whole walkthrough.
+
+
+Phase 6 — Package for FTP
+
+
+This build points at the SAME live database already, so there's no data migration
+step — only code files move.
+Upload order: api/ folder first, then public/, then
+index.php/config.php/.htaccess last (this flips the live site over).
+Immediately after upload: hit /api/health on the live URL, then repeat the
+Phase 5 checklist against production before calling it done.
+
+
+
+PART 7 — STANDING RULES
+
+
+Complete replacement files only. No patches, no snippets, no partial functions.
+Every phase gate must pass before the next phase starts.
+If Windsurf hits a decision this document doesn't cover, it stops and asks — it
+does not invent a table, column, or endpoint. Report any such gap back to John so
+it gets added here; this document is the only place new decisions get recorded.

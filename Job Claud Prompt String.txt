@@ -1,0 +1,612 @@
+You are sourcing job listings for a daily job-search intake page. 
+-Primary search area is New Braunfels and the surrounding 30 mile radius.
+-Secondairy search area is the I-35 corridor between and including San Antonio to Austin - Commuute accecptable for right salary/pay
+-Terciery search area is Houston and/or Galveston area. (a plus if relocation aid is provided, mention this if found) 
+-Fully Remote jobs are great as well
+
+Search REMOTE LIST SITES as well as LOCAL SITES LIST
+Do not stop search after a few locations, do not do a LAZY SEARCH.
+Only present jobs posted within the past 7 days
+
+LOCAL SITES LIST:
+Google "site: ats pages", "site: searches of corporate career pages"
+Indeed 
+Glassdoor 
+ZipRecruiter 
+ProductionHUB 
+Mediabistro 
+Linkedin
+Wellfound 
+Workday companies 
+Greenhouse companies 
+Lever companies 
+iCIMS companies 
+SmartRecruiters companies 
+Ashby companies 
+BambooHR companies 
+Paylocity companies 
+Google site: searches of corporate career pages
+
+REMOTE SITES LIST:
+jobs.github.com
+careerhound.ai
+europeremotely.com
+jobspresso.co
+dynamitejobs.com
+skipthedrive.com
+outsourcely.com
+virtualvocations.com
+cloudpeeps.com
+jobs.remotive.com
+remoterocketship.com
+RezPass.com
+
+Use the entire "OR" string first before selecting, creating your own single word search.
+Provide results with score value of 8.5 or higher. ignore results scored below 8.5
+The Goal is a EXTENSIVE JOB POOL to search through for my related terms. minimum of 15-20 jobs per search.
+If search resultes will take too long or be too long to deliver... deliver in multiple parts/passes and label [part-1], [part-2] etc
+
+Search in all these areas for each search string. search for and provide as many related job to the search string as possible. do not be lazy and quick with search. your job is to provide a pool of jobs related to the search string, not to analyze and pick the 'best matches'. my job is selecting best matches.
+Report ONLY job listings that have been posted in the last 7 days.
+
+Search for: [SEARCH STRING]
+
+Output ONLY a single INTERACTIVE HTML WINDOW code for copy paste into a php page, no plain text string, no explanations before or after. Follow this EXACT structure for every job found:
+
+1. First, if this is a new search category, output ONE category header card:
+<div class="col-lg-4 job-item">
+<div class="job-card">
+    <div class="job-label">[N]. [Category Name]</div>
+    <div class="job-value fs-5">[the exact search string used]</div>
+</div>
+</div>
+
+2. Then output one card per job found. For each job card, add a unique data-job-id="XXXXX" attribute to the outer <div class="col-lg-4 job-item">, where XXXXX is a random 8-character alphanumeric string, different for every job. 
+in this exact format:
+<div class="col-lg-4 job-item" data-job-id="xxxxxx">  
+  <div class="job-card">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <span class="score score-[high/medium/low]">[score]</span>
+    </div>
+    <div class="job-label">Company</div>
+    <div class="job-value fs-5">[company name]</div>
+    <div class="job-label mt-2">Job Title</div>
+    <div class="job-value">[job title]</div>
+    <div class="job-label mt-2">Salary</div>
+    <div class="job-secondary">[salary or "Not listed"]</div>
+    <div class="job-label mt-2">Location</div>
+    <div class="job-secondary">[location]</div>
+    <div class="job-label mt-2">Source</div>
+    <div class="job-secondary">[where found]</div>
+    <div class="job-label mt-3">Apply Link</div>
+    <div><a href="[DIRECT URL TO THE JOB POSTING]" target="_blank">Apply</a></div>
+    <div class="job-label mt-2">Date Posted</div>
+    <div class="job-secondary">[date or "Recently posted"]</div>
+    <div class="mt-3">
+      <button class="btn btn-sm btn-gold" onclick="toggleDetails(this)">View</button>
+      <button class="btn btn-sm btn-outline-light" onclick="copyJob(this)">Copy</button>
+      <button class="btn btn-sm btn-delete" onclick="deleteJob(this)">Delete</button>
+      <button class="btn btn-sm btn-gold">Import</button>
+    </div>
+    <div class="details hidden">
+      <div class="job-label mt-3">Summary</div>
+      <div class="job-secondary">[2-3 sentence summary of the role]</div>
+      <div class="job-label mt-3">Employment Type</div>
+      <div class="job-secondary">[Full-time / Contract / etc.]</div>
+      <div class="job-label mt-3">Required Skills</div>
+      <div class="job-secondary">[comma-separated key skills/requirements]</div>
+      <div class="job-label mt-3">Why This Matches</div>
+      <div class="job-secondary">[1-2 sentences on why this fits a video/multimedia production background]</div>
+      <div class="job-label mt-3">Notes</div>
+      <div class="job-secondary">[benefits, requirements, anything else notable]</div>
+    </div>
+  </div>
+</div>
+
+CRITICAL RULES:
+-Your job is to execute the instructions only. NOT think for yourself and limit or change amount of search results, search keywords, etc. 
+- The "Apply Link" section (with the real <a href> tag) is REQUIRED on every card, not optional. Always find and include the actual direct URL to the job posting or application page — never omit this section and never leave the href empty.
+- Score: rate 1.0-10.0 based on fit for a senior video/multimedia production background. Use score-high for 8.5+, score-medium for 7.0-8.4, score-low for below 7.0.
+- Only one category header card per search string, even if it returns many jobs.
+- Do not include a "Today's Jobs [date]" heading — that's added once, manually, outside this output.
+- Do not wrap the output in markdown or add commentary.
+-Export only interactive html format for direct copy paste into a php. NO Plain Text.
+
+
+·I am expanding across: 
+Indeed 
+Glassdoor 
+ZipRecruiter 
+ProductionHUB 
+Mediabistro 
+Wellfound 
+Company career pages 
+Additional sources when useful (Appcast aggregations, Upwork/freelance only when relevant) 
+I am also filtering harder:
+·Keep: 
+Video Production 
+Broadcast 
+Corporate Video 
+Multimedia 
+Studio Operations 
+AV Production 
+Producer/Editor 
+Video Systems
+
+1. Core Video Production
+"Video Producer OR Senior Video Producer OR Content Producer OR Media Producer"
+
+2. Multimedia
+"Multimedia Producer OR Multimedia Specialist OR Digital Media Specialist OR Media Specialist"
+
+3. Video Editing
+"Video Editor OR Senior Video Editor OR Multimedia Editor OR Post Production Editor"
+
+4. Creative Production
+"Creative Producer OR Brand Producer OR Digital Producer OR Creative Content Producer"
+
+5. Production Management
+"Production Manager OR Video Production Manager OR Studio Manager OR Production Supervisor"
+
+6. Studio Operations
+"Studio Operations Manager OR Media Operations Manager OR Video Operations Manager OR Creative Operations Manager"
+
+7. Creative Leadership
+"Creative Services Manager OR Creative Manager OR Creative Director"
+
+8. Content Marketing
+"Content Manager OR Content Marketing Manager OR Digital Content Manager OR Content Strategist
+Communications Specialist OR Corporate Communications" 
+
+9. Corporate Communication
+"Specialist OR Communications Producer OR Employee Communications Specialist"
+
+10. Marketing Communications
+"Marketing Communications Specialist OR Marketing Content Producer OR Brand Content Producer"
+
+11. Broadcast
+"Broadcast Technician OR Broadcast Operations Specialist OR Technical Director OR Studio Director"
+
+12. Live Production
+"Live Event Producer OR Live Streaming Producer OR Production Director"
+
+13. AV
+"AV Specialist OR Audiovisual Specialist OR Media Systems Specialist"
+
+14. Photography
+"Commercial Photographer OR Corporate Photographer OR Visual Content Specialist"
+
+15. Drone
+"Drone Pilot OR Commercial Drone Pilot OR UAV Pilot OR Drone Operations Specialist"
+
+
+16. Training / Education
+"Training Video Producer OR Instructional Media Developer OR eLearning Media Producer"
+
+17. Agency Roles
+"Content Creator OR Senior Content Creator OR Agency Producer OR Integrated Producer"
+
+18. Tech Companies
+"Product Video Producer OR Technical Content Producer OR Customer Education Producer"
+
+19. Client Success Manager
+"Client Success Manager OR Customer Success Manager OR Client Success Specialist OR Customer Success Specialist" 
+
+20. Client Success Partner
+ "Client Success Partner OR Customer Success Partner OR Client Experience Manager OR Customer Experience Manager" 
+
+21. Client Services Manager
+"Client Services Manager OR Customer Experience Specialist OR Client Relationship Manager OR Customer Relationship Manager" 
+
+22. Client Engagement Manage
+"Client Engagement Manager OR Customer Engagement Manager OR Client Onboarding Manager OR Customer Onboarding Manager" 
+
+23. Implementation Manager
+ "Implementation Manager OR Client Services Specialist OR Customer Success Associate"
+
+
+Client Success Manager ? Customer Success Manager ? Client Services Manager ? Client Experience Manager ? Customer Experience Manager ? Client Onboarding Manager ? Implementation Manager 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LinkedIn (100+ results) 
+Indeed 
+Glassdoor 
+ZipRecruiter 
+ProductionHUB 
+Mediabistro 
+Wellfound 
+Workday companies 
+Greenhouse companies 
+Lever companies 
+iCIMS companies 
+SmartRecruiters companies 
+Ashby companies 
+BambooHR companies 
+Paylocity companies 
+Google site: searches of corporate career pages
+
+
+
+structure:
+·col-lg-4 job-item 
+·job-card 
+·Match score 
+·Company 
+·Job Title 
+·Salary 
+·Location 
+·Source = SmartRecruiters 
+·Date Posted 
+·Apply Link 
+·View / Copy / Delete / Import 
+·Hidden details: 
+oSummary 
+oEmployment Type 
+oRequired Skills 
+oWhy This Matches 
+oNotes 
+
+Example:
+Generate job listings using the following HTML structure. It is critical that the "Import" button includes `onclick="importJob(this)"`.
+
+structure:
+· col-lg-4 job-item
+· job-card
+· Match score
+· Company
+· Job Title
+· Salary
+· Location
+· Source
+· Date Posted
+· Apply Link
+· Buttons: View, Copy, Delete, and Import (with onclick)
+· Hidden details:
+  o Summary
+  o Employment Type
+  o Required Skills
+  o Why This Matches
+  o Notes
+
+Example:
+<div class="col-lg-4 job-item">
+  <div class="job-card">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <span class="score score-high">9.2</span>
+    </div>
+    <div class="job-label">Company</div>
+    <div class="job-value fs-5">Meta</div>
+    <div class="job-label mt-2">Job Title</div>
+    <div class="job-value">Video Producer - Marketing</div>
+    <div class="job-label mt-2">Location</div>
+    <div class="job-secondary">Remote / Austin Eligible</div>
+    <div class="job-label mt-2">Source</div>
+    <div class="job-secondary">LinkedIn</div>
+    <div class="job-label mt-2">Date Posted</div>
+    <div class="job-secondary">Recently posted</div>
+    <div class="mt-3">
+      <button class="btn btn-sm btn-gold" onclick="toggleDetails(this)">View</button>
+      <button class="btn btn-sm btn-outline-light" onclick="copyJob(this)">Copy</button>
+      <button class="btn btn-sm btn-delete" onclick="deleteJob(this)">Delete</button>
+      <button class="btn btn-sm btn-gold" onclick="importJob(this)">Import</button>
+    </div>
+    <div class="details hidden">
+      <div class="job-label mt-3">Summary</div>
+      <div class="job-secondary">Creates marketing videos, product storytelling content, social campaigns, executive interviews, and brand experiences for global technology audiences.</div>
+      <div class="job-label mt-3">Salary</div>
+      <div class="job-secondary">Estimated $110,000 - $170,000</div>
+      <div class="job-label mt-3">Employment Type</div>
+      <div class="job-secondary">Full-time</div>
+      <div class="job-label mt-3">Apply Link</div>
+      <div class="job-secondary">LinkedIn application / Meta Careers</div>
+      <div class="job-label mt-3">Required Skills</div>
+      <div class="job-secondary">Video production, creative direction, marketing campaigns, storytelling, editing, social video.</div>
+      <div class="job-label mt-3">Why This Matches</div>
+      <div class="job-secondary">Strong match for senior production experience, digital storytelling, and technology marketing content.</div>
+      <div class="job-label mt-3">Notes</div>
+      <div class="job-secondary">High compensation target. Requires strong portfolio presentation.</div>
+    </div>
+  </div>
+</div>
+
+Video Production
+·Video Producer 
+·Senior Video Producer 
+·Executive Producer 
+·Associate Producer 
+·Producer 
+·Video Production Specialist 
+·Production Specialist 
+·Production Manager 
+·Video Operations Manager 
+·Production Coordinator 
+·Production Supervisor 
+·Studio Manager 
+·Studio Operations Manager 
+·Media Producer 
+·Multimedia Producer 
+·Digital Producer 
+·Content Producer 
+·Creative Producer 
+·Brand Producer 
+Video Editing
+·Senior Video Editor 
+·Video Editor 
+·Multimedia Editor 
+·Content Editor 
+·Digital Media Editor 
+·Post Production Editor 
+·Post Production Specialist 
+·Finishing Editor 
+·Online Editor 
+·Media Editor 
+·Video Finishing Artist 
+Corporate Communications
+·Communications Producer 
+·Internal Communications Specialist 
+·Corporate Communications Specialist 
+·Employee Communications Specialist 
+·Communications Manager 
+·Corporate Media Producer 
+·Executive Communications Producer 
+Marketing & Content
+·Content Marketing Manager 
+·Content Production Manager 
+·Content Manager 
+·Content Strategist 
+·Digital Content Manager 
+·Multimedia Marketing Specialist 
+·Marketing Communications Specialist 
+·Marketing Content Producer 
+·Brand Content Producer 
+·Creative Content Manager 
+·Campaign Producer 
+Creative Leadership
+·Creative Services Manager 
+·Creative Manager 
+·Creative Director 
+·Associate Creative Director 
+·Design Production Manager 
+·Creative Operations Manager 
+·Brand Studio Manager 
+Broadcast / Live Production
+·Broadcast Technician 
+·Broadcast Engineer 
+·Broadcast Operations Specialist 
+·Live Event Producer 
+·Live Streaming Producer 
+·Technical Director 
+·Video Technical Director 
+·Control Room Director 
+·Studio Director 
+·Production Director 
+·Master Control Operator 
+·Media Systems Specialist 
+Photography / Visual Media
+·Commercial Photographer 
+·Corporate Photographer 
+·Multimedia Specialist 
+·Visual Content Specialist 
+·Visual Storyteller 
+·Digital Imaging Specialist 
+Drone
+·Drone Pilot 
+·UAV Pilot 
+·Commercial Drone Pilot 
+·Aerial Media Specialist 
+·UAS Pilot 
+·Drone Operations Specialist 
+Education & Training
+·Media Specialist 
+·Learning Media Producer 
+·Training Video Producer 
+·Instructional Media Developer 
+·eLearning Media Producer 
+Government / Healthcare / Corporate
+·Audiovisual Specialist 
+·AV Specialist 
+·AV Technician 
+·Multimedia Specialist 
+·Media Services Manager 
+·Digital Media Specialist 
+·Visual Communications Specialist 
+Agency Titles
+Advertising agencies often use these:
+·Content Creator 
+·Senior Content Creator 
+·Creative Producer 
+·Integrated Producer 
+·Agency Producer 
+·Branded Content Producer 
+·Video Content Lead 
+Tech Companies
+Technology companies frequently use these titles instead:
+·Media Production Specialist 
+·Digital Media Specialist 
+·Content Experience Producer 
+·Product Video Producer 
+·Customer Education Producer 
+·Developer Media Producer 
+·Technical Content Producer 
+·Media Operations Manager 
+Event Production
+·Event Producer 
+·Conference Producer 
+·Event Technology Manager 
+·Event Media Producer 
+·Production Manager 
+·Technical Production Manager 
+Management Roles
+These are strong matches for your experience level:
+·Production Manager 
+·Studio Manager 
+·Creative Services Manager 
+·Content Operations Manager 
+·Video Operations Manager 
+·Media Operations Manager 
+·Production Supervisor 
+·Creative Operations Manager 
+Keywords for ATS Searches
+Rather than searching only job titles, combine titles with keywords such as:
+·Adobe Premiere Pro 
+·After Effects 
+·DaVinci Resolve 
+·Corporate Communications 
+·Video Production 
+·Content Marketing 
+·Digital Media 
+·Live Production 
+·Broadcast 
+·NDI 
+·SDI 
+·Streaming 
+·OBS 
+·TriCaster 
+·Photography 
+·FAA Part 107 
+·Drone 
+·Multimedia 
+·Storytelling 
+·Creative Services 
+·Studio Operations 
+High-priority search titles
+If I were building daily searches for you, I'd prioritize these 25 because they align best with your experience and are commonly used across corporate, agency, healthcare, manufacturing, and technology companies:
+1.Senior Video Producer 
+2.Video Producer 
+3.Multimedia Producer 
+4.Content Producer 
+5.Creative Producer 
+6.Corporate Communications Specialist 
+7.Communications Producer 
+8.Multimedia Specialist 
+9.Digital Media Specialist 
+10.Video Production Manager 
+11.Production Manager 
+12.Studio Manager 
+13.Creative Services Manager 
+14.Media Operations Manager 
+15.Content Marketing Manager 
+16.Content Strategist 
+17.Video Editor 
+18.Senior Video Editor 
+19.Broadcast Technician 
+20.Broadcast Operations Specialist 
+21.AV Specialist 
+22.Corporate Photographer 
+23.Multimedia Marketing Specialist 
+24.Brand Content Producer 
+25.Creative Operations Manager
+
+1."Video Producer" OR "Senior Video Producer" OR "Content Producer" OR "Media Producer"
+2."Multimedia Producer" OR "Multimedia Specialist" OR "Digital Media Specialist" OR "Media Specialist"
+3."Video Editor" OR "Senior Video Editor" OR "Multimedia Editor" OR "Post Production Editor"
+4."Creative Producer" OR "Brand Producer" OR "Digital Producer" OR "Creative Content Producer"
+5."Production Manager" OR "Video Production Manager" OR "Studio Manager" OR "Production Supervisor"
+6."Studio Operations Manager" OR "Media Operations Manager" OR "Video Operations Manager" OR "Creative Operations Manager"
+7."Creative Services Manager" OR "Creative Manager" OR "Creative Director"
+8."Content Manager" OR "Content Marketing Manager" OR "Digital Content Manager" OR "Content Strategist"
+9."Communications Specialist" OR "Corporate Communications Specialist" OR "Communications Producer" OR "Employee Communications Specialist"
+10."Marketing Communications Specialist" OR "Marketing Content Producer" OR "Brand Content Producer"
+11."Broadcast Technician" OR "Broadcast Operations Specialist" OR "Technical Director" OR "Studio Director"
+12."Live Event Producer" OR "Live Streaming Producer" OR "Production Director"
+13."AV Specialist" OR "Audiovisual Specialist" OR "Media Systems Specialist"
+14."Commercial Photographer" OR "Corporate Photographer" OR "Visual Content Specialist"
+15."Drone Pilot" OR "Commercial Drone Pilot" OR "UAV Pilot" OR "Drone Operations Specialist"
+16."Training Video Producer" OR "Instructional Media Developer" OR "eLearning Media Producer"
+17."Content Creator" OR "Senior Content Creator" OR "Agency Producer" OR "Integrated Producer"
+18."Product Video Producer" OR "Technical Content Producer" OR "Customer Education Producer"
+
+
+daily
+"Video Producer" OR "Senior Video Producer" OR "Content Producer"
+"Multimedia Producer" OR "Media Producer" OR "Digital Producer"
+"Production Manager" OR "Studio Manager" OR "Video Production Manager"
+"Creative Services Manager" OR "Creative Manager" OR "Creative Operations Manager"
+"Content Manager" OR "Content Strategist" OR "Content Marketing Manager"
+"Corporate Communications Specialist" OR "Communications Producer"
+"Video Editor" OR "Senior Video Editor" OR "Post Production Editor"
+"Broadcast Technician" OR "Broadcast Operations Specialist" OR "Technical Director"
+"Multimedia Specialist" OR "Digital Media Specialist" OR "Visual Content Specialist"
+"Commercial Photographer" OR "Corporate Photographer" OR "Drone Pilot"
+
+Each card will include:
+·unique data-jobid 
+·unique id 
+·Match Score with proper color class 
+·Company 
+·Job Title 
+·Salary (visible) 
+·Location 
+·Source 
+·Date Posted 
+·Apply Now hyperlink (target="_blank") 
+·View / Copy / Delete / Import buttons 
+·Hidden Details 
+oView / Copy / Delete / Import 
+oSummary 
+oEmployment Type 
+oRequired Skills 
+oWhy This Matches 
+oNotes 
+
+·Consistent formatting 
+·HTML escaping 
+·Ready to paste directly into your Bootstrap grid 
+·No markdown 
+·No explanations 
+·No code fences 
+·Just the HTML
+
+
+<div class="col-lg-4 job-item" data-job-id="a1B9k3Qz">
+
+
+
+function deleteJob(button) {
+  if (!confirm("Delete this job?")) return;
+  const jobItem = button.closest(".job-item");
+  const jobId = jobItem.dataset.jobId;
+
+  fetch("delete_job.php", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ jobId })
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) { jobItem.remove(); updateJobCount(); }
+      else alert("Delete failed: " + (data.error || "unknown error"));
+    })
+    .catch(err => alert("Delete failed: " + err));
+}
+
+
+
+$jobId = trim($data['jobId'] ?? '');
+// ...
+$pattern = '/<div class="col-lg-4 job-item" data-job-id="' . preg_quote($jobId, '/') . '">.*?<\/div>\s*<\/div>\s*<\/div>/s';
+
+
+
+
+
+
+
+("Client Success Manager" OR "Customer Success Manager" OR "Client Success Specialist" OR "Customer Success Specialist" OR "Client Success Partner" OR "Customer Success Partner" OR "Client Experience Manager" OR "Customer Experience Manager" OR "Client Services Manager" OR "Customer Experience Specialist" OR "Account Manager" OR "Client Relationship Manager" OR "Customer Relationship Manager" OR "Client Engagement Manager" OR "Customer Engagement Manager" OR "Client Onboarding Manager" OR "Customer Onboarding Manager" OR "Implementation Manager" OR "Client Services Specialist" OR "Customer Success Associate")
+
+("Client Success Manager" OR "Customer Success Manager" OR "Client Services Manager" OR "Client Experience Manager" OR "Customer Experience Manager" OR "Client Relationship Manager" OR "Client Engagement Manager" OR "Customer Engagement Manager" OR "Client Onboarding Manager" OR "Customer Onboarding Manager" OR "Implementation Manager" OR "Account Manager" OR "Account Coordinator" OR "Client Services Specialist" OR "Customer Success Specialist" OR "Customer Success Associate")
+
+Client Success Manager ? Customer Success Manager ? Client Services Manager ? Client Experience Manager ? Customer Experience Manager ? Client Onboarding Manager ? Implementation Manager 

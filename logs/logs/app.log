@@ -1,0 +1,7 @@
+[2026-07-13 18:51:33] [ERROR] DB connection failed: SQLSTATE[HY000] [1045] Access denied for user 'carrmultiJobhunt'@'localhost' (using password: YES)
+[2026-07-13 18:51:34] [ERROR] DB connection failed: SQLSTATE[HY000] [1045] Access denied for user 'carrmultiJobhunt'@'localhost' (using password: YES)
+[2026-07-13 18:53:27] [ERROR] DB connection failed: SQLSTATE[HY000] [1045] Access denied for user 'carrmultiJobhunt'@'localhost' (using password: YES)
+[2026-07-13 18:53:31] [ERROR] DB connection failed: SQLSTATE[HY000] [1045] Access denied for user 'carrmultiJobhunt'@'localhost' (using password: YES)
+[2026-07-13 19:02:00] [ERROR] DB connection failed: SQLSTATE[HY000] [1045] Access denied for user 'carrmultiJobhunt'@'localhost' (using password: YES)
+[2026-07-13 19:02:28] [ERROR] DB connection failed: SQLSTATE[HY000] [1045] Access denied for user 'carrmultiJobhunt'@'localhost' (using password: YES)
+[2026-07-13 19:02:30] [ERROR] DB connection failed: SQLSTATE[HY000] [1045] Access denied for user 'carrmultiJobhunt'@'localhost' (using password: YES)
